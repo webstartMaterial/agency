@@ -80,63 +80,88 @@
         "items": [
             {
                 "title": "Création de sites web & apps",
-                "description": "Sites vitrines, e-commerce ou applications web sur mesure, responsives, performants et administrables facilement."
+                "description": "Sites vitrines, e-commerce ou applications web sur mesure, responsives, performants et administrables facilement.",
+                "icon": "ti-layout"
             },
             {
                 "title": "Développement mobile",
-                "description": "Applications mobiles Android et iOS pour étendre votre présence et améliorer l'expérience utilisateur."
+                "description": "Applications mobiles Android et iOS pour étendre votre présence et améliorer l'expérience utilisateur.",
+                "icon": "ti-mobile"
             },
             {
                 "title": "Communication & marketing digital",
-                "description": "Stratégies de communication ciblées sur les réseaux sociaux, campagnes Ads, newsletters et plus encore."
+                "description": "Stratégies de communication ciblées sur les réseaux sociaux, campagnes Ads, newsletters et plus encore.",
+                "icon": "ti-announcement"
             },
             {
                 "title": "IA & marketing automation",
-                "description": "Outils d'automatisation intelligents pour générer des leads, personnaliser l'expérience et gagner du temps."
+                "description": "Outils d'automatisation intelligents pour générer des leads, personnaliser l'expérience et gagner du temps.",
+                "icon": "ti-settings"
             },
             {
                 "title": "Process & automatisation métier",
-                "description": "Création de systèmes ou mini-outils personnalisés pour fluidifier vos opérations internes selon vos demandes spécifiques."
+                "description": "Création de systèmes ou mini-outils personnalisés pour fluidifier vos opérations internes selon vos demandes spécifiques.",
+                "icon": "ti-loop"
             },
             {
                 "title": "SEO & visibilité",
-                "description": "Optimisation de votre positionnement sur les moteurs de recherche et amélioration de votre visibilité locale et nationale."
+                "description": "Optimisation de votre positionnement sur les moteurs de recherche et amélioration de votre visibilité locale et nationale.",
+                "icon": "ti-stats-up"
             },
             {
                 "title": "Photographie & image de marque",
-                "description": "Shooting photo, retouche, banques d’images, mise en valeur de vos produits ou de votre activité."
+                "description": "Shooting photo, retouche, banques d’images, mise en valeur de vos produits ou de votre activité.",
+                "icon": "ti-camera"
             },
             {
                 "title": "Webdesign & génération de logos",
-                "description": "Création d’univers graphiques uniques, templates élégants et logos professionnels en quelques heures."
+                "description": "Création d’univers graphiques uniques, templates élégants et logos professionnels en quelques heures.",
+                "icon": "ti-brush"
             }
         ],
         "button": "Discutons de votre projet"
     },
     "process": {
+        "title": "Notre expertise à votre service",
+        "description": "Notre agence réunit des compétences variées et complémentaires pour répondre à tous vos besoins numériques, de la conception visuelle à la performance marketing.",
         "steps": [
             {
                 "title": "Prise de contact",
-                "description": "Nous échangeons avec vous pour comprendre vos besoins, vos objectifs et votre activité. Un premier brief rapide permet de poser les bases du projet."
+                "description": "Nous échangeons avec vous pour comprendre vos besoins.",
+                "icon": "ti-comments",
+                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Contact"
             },
             {
                 "title": "Proposition & maquette",
-                "description": "Nous vous soumettons une proposition de structure, de style et de fonctionnalités avec une première maquette ou un wireframe si nécessaire."
+                "description": "Nous soumettons une proposition de style et de structure.",
+                "icon": "ti-layout",
+                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Maquette"
             },
             {
-                "title": "Conception & développement",
-                "description": "Nous créons le site ou l'application selon les spécifications validées. Vous pouvez suivre l'avancement en temps réel et donner vos retours."
+                "title": "Développement",
+                "description": "Création du site ou de l'app selon les specs validées.",
+                "icon": "ti-settings",
+                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Code"
             },
             {
-                "title": "Optimisation & tests",
-                "description": "Nous vérifions les performances, la compatibilité mobile, le SEO, et procédons aux ajustements finaux avant mise en ligne."
+                "title": "Optimisation",
+                "description": "Tests, SEO, compatibilité, performance.",
+                "icon": "ti-bar-chart",
+                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Tests"
             },
             {
-                "title": "Livraison & accompagnement",
-                "description": "Le projet est mis en ligne. Nous assurons un support de prise en main et restons disponibles pour des évolutions ou du suivi."
+                "title": "Livraison",
+                "description": "Mise en ligne & accompagnement post-livraison.",
+                "icon": "ti-check-box",
+                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Go+Live"
+            },
+            {
+                "title": "Suivi & Maintenance",
+                "description": "Maintenance de votre projet web et amélioration continue.",
+                "icon": "ti-check-box",
+                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Go+Live"
             }
-        ],
-        "image": "https://dummyimage.com/1200x500"
+        ]
     },
     "team": {
         "title": "Notre équipe",
@@ -145,25 +170,25 @@
             {
                 "name": "Sarah Dupont",
                 "role": "Cheffe de projet web",
-                "bio": "Coordination, communication client, suivi qualité et satisfaction sont au cœur de son métier.",
+                "bio": "Experte en gestion agile, elle supervise les plannings, coordonne les équipes et s’assure que chaque livrable respecte vos attentes et les délais convenus.",
                 "image": "https://dummyimage.com/200x200/8e44ad/ffffff&text=Sarah"
             },
             {
                 "name": "Yacine Benali",
                 "role": "Développeur full-stack",
-                "bio": "Spécialiste Symfony, Laravel et React. Il transforme vos idées en produits numériques robustes.",
+                "bio": "Il développe des plateformes web performantes avec Symfony, Laravel ou React, en veillant à la sécurité, la scalabilité et l'expérience utilisateur fluide.",
                 "image": "https://dummyimage.com/201x201/27ae60/ffffff&text=Yacine"
             },
             {
                 "name": "Clara Morel",
                 "role": "UX/UI Designer",
-                "bio": "Design moderne, ergonomie et branding : elle donne vie à votre image sur tous les écrans.",
+                "bio": "Elle conçoit des interfaces élégantes et intuitives, en assurant une cohérence graphique et une expérience utilisateur engageante sur tous les supports.",
                 "image": "https://dummyimage.com/202x202/f39c12/ffffff&text=Clara"
             },
             {
                 "name": "Marc Lefevre",
                 "role": "Expert marketing digital",
-                "bio": "SEO, publicité en ligne, automation : il assure la visibilité et la croissance de votre projet.",
+                "bio": "Il met en place des stratégies digitales efficaces : SEO, campagnes Ads, réseaux sociaux, pour générer du trafic qualifié et convertir vos visiteurs.",
                 "image": "https://dummyimage.com/203x203/2980b9/ffffff&text=Marc"
             }
         ]
@@ -255,6 +280,7 @@
         ]
     },
     "contact": {
+        "title": "Comment nous contacter?",
         "address": "22 avenue Jean De Lattre de Tassigny, Cannes, France",
         "email": "contact@exemple.com",
         "phone": "+33 6 12 34 56 78",
