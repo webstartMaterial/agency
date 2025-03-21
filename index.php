@@ -48,8 +48,9 @@
   <?php require_once("./process.php"); ?>
   <?php require_once("./team.php"); ?>
   <!-- <?php require_once("./numbers2.php"); ?> -->
-  <?php require_once("./pricing.php"); ?>
+  <?php require_once("./portfolio.php"); ?>
   <?php require_once("./testimonials.php"); ?>
+  <?php require_once("./pricing.php"); ?>
   <?php require_once("./contact.php"); ?>
   <!--<?php require_once("./newsletter.php"); ?>-->
   <?php require_once("./footer.php"); ?>
