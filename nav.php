@@ -2,7 +2,7 @@
   darkMode = localStorage.getItem('theme') === 'dark';
   if(darkMode) document.documentElement.classList.add('dark');
 ">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+  <div class="container mx-auto flex items-center justify-between px-5 py-4">
     <!-- Logo + Marque -->
     <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="/">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
