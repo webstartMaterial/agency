@@ -1,20 +1,26 @@
 <section class="text-gray-600 dark:text-gray-300 body-font bg-gray-100 dark:bg-gray-900" data-aos="fade-up">
   <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-white">
+    <div class="text-center mb-20">
+      <h2 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-white mb-4">
         <?= htmlspecialchars($content['team']['title']) ?>
-      </h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600 dark:text-gray-400">
+      </h2>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600 dark:text-gray-400">
         <?= htmlspecialchars($content['team']['description']) ?>
       </p>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+      </div>
     </div>
+
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       <?php foreach ($content['team']['members'] as $index => $member): ?>
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center p-6" data-aos="zoom-in" data-aos-delay="<?= $index * 150 ?>">
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center p-6"
+          data-aos="zoom-in" data-aos-delay="<?= $index * 150 ?>">
           <img alt="<?= htmlspecialchars($member['name']) ?>"
-               class="w-32 h-32 rounded-full object-cover object-center mb-4 border-4 border-purple-500 shadow"
-               src="<?= htmlspecialchars($member['image']) ?>">
+            class="w-32 h-32 rounded-full object-cover object-center mb-4 border-4 border-purple-500 shadow"
+            src="<?= htmlspecialchars($member['image']) ?>">
 
           <div class="w-full">
             <h2 class="title-font font-medium text-lg text-gray-900 dark:text-white">
@@ -38,7 +44,8 @@
               <!-- Twitter (X) -->
               <a class="ml-2 text-[#1DA1F2] hover:text-[#0d8ae5]">
                 <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
                 </svg>
               </a>
 

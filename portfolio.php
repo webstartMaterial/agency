@@ -1,13 +1,18 @@
 <section class="text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
-    <div class="flex w-full mb-20 flex-wrap">
-      <h1 data-aos="fade-right" class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-white lg:w-1/3 lg:mb-0 mb-4">
-        <?= htmlspecialchars($content['portfolio']['title']) ?>
-      </h1>
-      <p data-aos="fade-left" class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600 dark:text-gray-400">
-        <?= htmlspecialchars($content['portfolio']['description']) ?>
-      </p>
-    </div>
+  <div class="flex w-full mb-20 flex-wrap">
+  <div class="lg:w-1/3 w-full mb-4" data-aos="fade-right">
+    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-white mb-2">
+      <?= htmlspecialchars($content['portfolio']['title']) ?>
+    </h1>
+    <div class="w-16 h-1 bg-purple-500 rounded inline-block"></div>
+  </div>
+
+  <p data-aos="fade-left" class="lg:pl-6 lg:w-2/3 w-full leading-relaxed text-base text-gray-600 dark:text-gray-400">
+    <?= htmlspecialchars($content['portfolio']['description']) ?>
+  </p>
+</div>
+
 
     <div class="flex flex-wrap md:-m-2 -m-1">
       <div class="flex flex-wrap w-1/2">

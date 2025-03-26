@@ -1,14 +1,27 @@
 <section class="text-gray-600 dark:text-gray-300 body-font bg-gray-100 dark:bg-gray-900">
   <div class="container px-5 py-24 mx-auto">
-    <h1 class="text-3xl font-medium title-font text-gray-900 dark:text-white mb-12 text-center" data-aos="fade-up">
-      <?= htmlspecialchars($content['testimonials']['title']) ?>
-    </h1>
+
+    <div class="text-center mb-20">
+      <h2 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-white mb-4">
+        <?= htmlspecialchars($content['testimonials']['title']) ?>
+      </h2>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 dark:text-gray-400">
+        <?= htmlspecialchars($content['testimonials']['description']) ?>
+      </p>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+      </div>
+    </div>
+
+
     <div class="flex flex-wrap -m-4">
       <?php foreach ($content['testimonials']['items'] as $index => $testimonial): ?>
-        <div class="p-4 md:w-1/2 w-full" data-aos="fade-up" data-aos-delay="<?= $index * 200 ?>">
-          <div class="h-full bg-gray-100 dark:bg-gray-800 p-8 rounded shadow-md hover:shadow-xl transition-shadow duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              class="block w-5 h-5 text-purple-400 mb-4" viewBox="0 0 975.036 975.036">
+        <div class="p-4 md:w-1/2 w-full testimonial-item <?= $index >= 4 ? 'hidden' : '' ?>" data-index="<?= $index ?>"
+          data-aos="fade-up" data-aos-delay="<?= $index * 200 ?>">
+          <div
+            class="h-full bg-gray-100 dark:bg-gray-800 p-8 rounded shadow-md hover:shadow-xl transition-shadow duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-purple-400 mb-4"
+              viewBox="0 0 975.036 975.036">
               <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 
               22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 
               37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 
@@ -47,5 +60,28 @@
         </div>
       <?php endforeach; ?>
     </div>
+
+    <div class="flex justify-center mt-8 space-x-3">
+      <button onclick="showTestimonials(0)"
+        class="w-4 h-4 rounded-full bg-purple-500 opacity-70 hover:opacity-100 focus:outline-none"></button>
+      <button onclick="showTestimonials(1)"
+        class="w-4 h-4 rounded-full bg-purple-300 opacity-70 hover:opacity-100 focus:outline-none"></button>
+    </div>
   </div>
 </section>
+
+<script>
+  function showTestimonials(page) {
+    const all = document.querySelectorAll('.testimonial-item');
+    all.forEach(el => el.classList.add('hidden'));
+
+    const start = page * 4;
+    const end = start + 4;
+
+    all.forEach((el, i) => {
+      if (i >= start && i < end) {
+        el.classList.remove('hidden');
+      }
+    });
+  }
+</script>

@@ -2,13 +2,16 @@
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
 
       <!-- Titre + description -->
-      <div class="w-full mb-12 text-center" data-aos="fade-down">
+      <div class="w-full mb-20 text-center" data-aos="fade-down">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-white">
         <?= htmlspecialchars($content['process']['title']) ?>
       </h1>
       <p class="lg:w-1/2 w-full mx-auto leading-relaxed text-gray-500 dark:text-gray-400">
         <?= htmlspecialchars($content['process']['description']) ?>
       </p>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+      </div>
     </div>
     <div class="flex flex-wrap w-full">
 
@@ -40,11 +43,12 @@
         <!-- CTA -->
         <div class="mt-8" data-aos="fade-up" data-aos-delay="500">
           <a href="#contact" class="inline-flex items-center text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">
-            Discutons de votre projet
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            <i class="ti-comments mr-2 text-xl leading-none"></i>
+            <?= htmlspecialchars($content['process']['button']) ?>
+            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                  stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
+            </svg> -->
           </a>
         </div>
       </div>

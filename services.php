@@ -7,14 +7,19 @@
       <p class="lg:w-1/2 w-full leading-relaxed text-gray-500 dark:text-gray-400">
         <?= htmlspecialchars($content['skills']['description']) ?>
       </p>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+      </div>
     </div>
+
 
     <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
       <?php
-        $icons = ['ti-world', 'ti-mobile', 'ti-announcement', 'ti-thought', 'ti-loop', 'ti-stats-up', 'ti-camera', 'ti-paint-bucket'];
+      $icons = ['ti-world', 'ti-mobile', 'ti-announcement', 'ti-thought', 'ti-loop', 'ti-stats-up', 'ti-camera', 'ti-paint-bucket'];
       ?>
       <?php foreach ($content['skills']['items'] as $index => $item): ?>
-        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="<?= $index * 100 ?>">
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition duration-300"
+          data-aos="fade-up" data-aos-delay="<?= $index * 100 ?>">
           <div class="flex items-center mb-4">
             <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
               <i class="<?= $icons[$index % count($icons)] ?> text-purple-600 dark:text-purple-400 text-3xl"></i>
@@ -36,8 +41,12 @@
       <?php endforeach; ?>
     </div>
 
-    <button class="flex mx-auto mt-16 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg" data-aos="zoom-in" data-aos-delay="400">
+    <button
+      class="flex items-center justify-center mx-auto mt-16 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg"
+      data-aos="zoom-in" data-aos-delay="400">
+      <i class="ti-comments mr-2 text-xl leading-none"></i>
       <?= htmlspecialchars($content['skills']['button']) ?>
     </button>
+
   </div>
 </section>

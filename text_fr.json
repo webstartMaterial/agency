@@ -5,7 +5,7 @@
         "paragraph": "Notre agence web en ligne conçoit des sites professionnels, rapides, responsives et optimisés pour le SEO. Idéal pour lancer votre activité, présenter vos services ou vendre vos produits en ligne.",
         "button1": "Voir nos offres",
         "button2": "Demander un devis",
-        "image": "https://dummyimage.com/720x600/6366f1/ffffff&text=Agence+Web",
+        "image": "./imgs/header.webp",
         "brand": "Ademie WS",
         "nav": [
             {
@@ -39,17 +39,20 @@
             {
                 "title": "Création de sites web",
                 "description": "Sites vitrines modernes, responsives et optimisés SEO pour présenter vos services.",
-                "link_label": "En savoir plus"
+                "link_label": "En savoir plus",
+                "img": "./imgs/service1.webp"
             },
             {
                 "title": "Développement mobile",
                 "description": "Applications Android/iOS sur mesure pour étendre votre activité sur mobile.",
-                "link_label": "En savoir plus"
+                "link_label": "En savoir plus",
+                "img": "./imgs/service2.webp"
             },
             {
                 "title": "Marketing digital",
                 "description": "Publicité en ligne, réseaux sociaux et email marketing pour booster votre visibilité.",
-                "link_label": "En savoir plus"
+                "link_label": "En savoir plus",
+                "img": "./imgs/service3.webp"
             }
         ],
         "button": "Voir toutes nos offres"
@@ -122,74 +125,75 @@
         "button": "Discutons de votre projet"
     },
     "process": {
-        "title": "Notre expertise à votre service",
-        "description": "Notre agence réunit des compétences variées et complémentaires pour répondre à tous vos besoins numériques, de la conception visuelle à la performance marketing.",
+        "title": "Un processus clair pour des résultats concrets",
+        "description": "Notre méthodologie repose sur l’écoute, la collaboration et l’expertise. De la première prise de contact à la mise en ligne, chaque étape est pensée pour garantir un projet fluide, maîtrisé et performant.",
         "steps": [
             {
                 "title": "Prise de contact",
                 "description": "Nous échangeons avec vous pour comprendre vos besoins.",
                 "icon": "ti-comments",
-                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Contact"
+                "image": "./imgs/process1.webp"
             },
             {
                 "title": "Proposition & maquette",
                 "description": "Nous soumettons une proposition de style et de structure.",
                 "icon": "ti-layout",
-                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Maquette"
+                "image": "./imgs/process2.webp"
             },
             {
                 "title": "Développement",
                 "description": "Création du site ou de l'app selon les specs validées.",
                 "icon": "ti-settings",
-                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Code"
+                "image": "./imgs/process3.webp"
             },
             {
                 "title": "Optimisation",
                 "description": "Tests, SEO, compatibilité, performance.",
                 "icon": "ti-bar-chart",
-                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Tests"
+                "image": "./imgs/process4.webp"
             },
             {
                 "title": "Livraison",
                 "description": "Mise en ligne & accompagnement post-livraison.",
                 "icon": "ti-check-box",
-                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Go+Live"
+                "image": "./imgs/process5.webp"
             },
             {
                 "title": "Suivi & Maintenance",
                 "description": "Maintenance de votre projet web et amélioration continue.",
                 "icon": "ti-check-box",
-                "image": "https://dummyimage.com/300x200/8e44ad/ffffff&text=Go+Live"
+                "image": "./imgs/process6.webp"
             }
-        ]
+        ],
+        "button": "Discutons de votre projet"
     },
     "team": {
         "title": "Notre équipe",
         "description": "Une équipe passionnée d'experts du web, du design, de la tech et du marketing digital, réunie pour concrétiser vos projets.",
         "members": [
             {
-                "name": "Sarah Dupont",
-                "role": "Cheffe de projet web",
-                "bio": "Experte en gestion agile, elle supervise les plannings, coordonne les équipes et s’assure que chaque livrable respecte vos attentes et les délais convenus.",
-                "image": "https://dummyimage.com/200x200/8e44ad/ffffff&text=Sarah"
-            },
-            {
-                "name": "Yacine Benali",
+                "name": "Sam H.",
                 "role": "Développeur full-stack",
-                "bio": "Il développe des plateformes web performantes avec Symfony, Laravel ou React, en veillant à la sécurité, la scalabilité et l'expérience utilisateur fluide.",
-                "image": "https://dummyimage.com/201x201/27ae60/ffffff&text=Yacine"
+                "bio": "Il conçoit et développe des applications web robustes et sur mesure, en alliant performance, sécurité et expérience utilisateur optimale.",
+                "image": "./imgs/team/team1.webp"
             },
             {
-                "name": "Clara Morel",
+                "name": "Shaade H.",
                 "role": "UX/UI Designer",
-                "bio": "Elle conçoit des interfaces élégantes et intuitives, en assurant une cohérence graphique et une expérience utilisateur engageante sur tous les supports.",
-                "image": "https://dummyimage.com/202x202/f39c12/ffffff&text=Clara"
+                "bio": "Elle imagine des interfaces modernes et intuitives, centrées sur l’utilisateur, pour transformer chaque visite en une expérience mémorable.",
+                "image": "./imgs/team/team2.webp"
             },
             {
-                "name": "Marc Lefevre",
-                "role": "Expert marketing digital",
-                "bio": "Il met en place des stratégies digitales efficaces : SEO, campagnes Ads, réseaux sociaux, pour générer du trafic qualifié et convertir vos visiteurs.",
-                "image": "https://dummyimage.com/203x203/2980b9/ffffff&text=Marc"
+                "name": "Renato S.",
+                "role": "Cadreur - monteur",
+                "bio": "Il capte l’essence de votre marque à travers des vidéos percutantes et dynamiques, du tournage jusqu’au montage final.",
+                "image": "./imgs/team/team3.webp"
+            },
+            {
+                "name": "Habby H.",
+                "role": "Juriste",
+                "bio": "Elle veille à la conformité juridique de vos projets digitaux, en vous accompagnant sur les aspects réglementaires, RGPD et contrats.",
+                "image": "./imgs/team/team4.webp"
             }
         ]
     },
@@ -252,6 +256,7 @@
     },
     "testimonials": {
         "title": "Ce que disent nos clients",
+        "description": "Ils nous ont fait confiance. Découvrez les retours d'expérience de nos clients après avoir collaboré avec notre équipe sur leurs projets digitaux.",
         "items": [
             {
                 "text": "L’équipe a su créer notre site vitrine en un temps record, avec un design moderne et parfaitement adapté à nos besoins. Une prestation très pro.",
@@ -276,11 +281,36 @@
                 "name": "Yassine Lefèvre",
                 "role": "E-commerçant",
                 "image": "https://dummyimage.com/109x109/f39c12/ffffff&text=Y"
+            },
+            {
+                "text": "Collaboration fluide et à l’écoute. Leur équipe a su transformer nos idées en une application mobile intuitive et performante.",
+                "name": "Sophie Renault",
+                "role": "Responsable projet digital",
+                "image": "https://dummyimage.com/110x110/e74c3c/ffffff&text=S"
+            },
+            {
+                "text": "Leur accompagnement personnalisé nous a permis de moderniser notre image en ligne. Résultat : +40% de demandes de devis en un mois !",
+                "name": "Antoine Delmas",
+                "role": "Gérant de Menuitech",
+                "image": "https://dummyimage.com/111x111/1abc9c/ffffff&text=A"
+            },
+            {
+                "text": "Un service client ultra réactif, une compréhension rapide de notre métier… Ils ont su livrer un site ultra pro, dans les délais.",
+                "name": "Fatima Zahra",
+                "role": "Architecte d’intérieur",
+                "image": "https://dummyimage.com/112x112/9b59b6/ffffff&text=F"
+            },
+            {
+                "text": "Notre plateforme de formation en ligne est un succès. Interface claire, système de paiement intégré, et une vraie attention au détail.",
+                "name": "Marc Teyssier",
+                "role": "Formateur indépendant",
+                "image": "https://dummyimage.com/113x113/34495e/ffffff&text=M"
             }
         ]
     },
     "contact": {
         "title": "Comment nous contacter?",
+        "description": "Besoin d’un site web, d’un accompagnement digital ou d’un devis rapide ? Parlons-en ! Notre équipe vous répond sous 24h.",
         "address": "22 avenue Jean De Lattre de Tassigny, Cannes, France",
         "email": "contact@exemple.com",
         "phone": "+33 6 12 34 56 78",
@@ -346,46 +376,46 @@
         "description": "Découvrez une sélection de projets que nous avons réalisés pour nos clients ces derniers mois. De la création de sites web sur mesure aux applications mobiles, en passant par des identités visuelles fortes et du branding complet, chaque réalisation reflète notre engagement à proposer des solutions adaptées, performantes et esthétiques. Notre équipe vous accompagne de A à Z, de l'idée initiale à la mise en ligne, avec un souci constant de qualité et d'impact.",
         "projects": [
             {
-                "title": "Site vitrine pour start-up",
-                "client": "StartUpX",
+                "title": "Plateforme de formation en ligne",
+                "client": "Académie WS",
                 "type": "Site Web",
-                "image": "https://dummyimage.com/500x300",
-                "link": "#"
+                "image": "./imgs/portfolio/portfolio1.webp",
+                "link": "https://www.academiews.fr"
             },
             {
-                "title": "Application mobile santé",
-                "client": "MediZen",
-                "type": "App Mobile",
-                "image": "https://dummyimage.com/501x301",
-                "link": "#"
+                "title": "Centre de formation",
+                "client": "Gabriel RH",
+                "type": "Site web",
+                "image": "./imgs/portfolio/portfolio2.webp",
+                "link": "https://gabrielrh.com/"
             },
             {
-                "title": "E-commerce de mode",
-                "client": "FashionGo",
-                "type": "Boutique en ligne",
-                "image": "https://dummyimage.com/600x360",
-                "link": "#"
+                "title": "Agence WEB",
+                "client": "Zedino",
+                "type": "Agence WEB",
+                "image": "./imgs/portfolio/portfolio3.webp",
+                "link": "https://zedino.com/"
             },
             {
-                "title": "Refonte UX d’un outil RH",
-                "client": "HR Tools",
-                "type": "UI/UX Design",
-                "image": "https://dummyimage.com/601x361",
-                "link": "#"
+                "title": "Agence de consulting",
+                "client": "Exissia",
+                "type": "Site web",
+                "image": "./imgs/portfolio/portfolio4.webp",
+                "link": "https://www.exissia.com/"
             },
             {
-                "title": "Landing page IA",
-                "client": "NeuralAI",
-                "type": "Webmarketing",
-                "image": "https://dummyimage.com/502x302",
-                "link": "#"
+                "title": "Agence de consulting informatique",
+                "client": "Scafendi",
+                "type": "Site web",
+                "image": "./imgs/portfolio/portfolio5.webp",
+                "link": "https://scafendi.com/"
             },
             {
-                "title": "Site événementiel",
-                "client": "Conférence X",
-                "type": "Site événement",
-                "image": "https://dummyimage.com/503x303",
-                "link": "#"
+                "title": "Portfolio Client",
+                "client": "Samih HABBANI",
+                "type": "Portfolio",
+                "image": "./imgs/portfolio/portfolio6.webp",
+                "link": "http://samihhabbani.com/"
             }
         ]
     }
