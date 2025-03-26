@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon site avec Tailblocks</title>
   <link rel="stylesheet" href="./themify-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -19,7 +20,7 @@
 
 </head>
 
-<body class="pt-24 overflow-x-hidden max-w-full">
+<body class="pt-18 overflow-x-hidden max-w-full">
 
   <?php
 
