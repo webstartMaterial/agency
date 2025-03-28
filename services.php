@@ -1,9 +1,10 @@
 <section class="text-gray-600 dark:text-gray-300 body-font bg-gray-100 dark:bg-gray-900" data-aos="fade-up">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center" data-aos="fade-down">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-white">
+      <h2
+        class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-4">
         <?= htmlspecialchars($content['skills']['title']) ?>
-      </h1>
+      </h2>
       <p class="lg:w-1/2 w-full leading-relaxed text-gray-500 dark:text-gray-400">
         <?= htmlspecialchars($content['skills']['description']) ?>
       </p>
@@ -41,12 +42,14 @@
       <?php endforeach; ?>
     </div>
 
-    <button
-      class="flex items-center justify-center mx-auto mt-16 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg"
-      data-aos="zoom-in" data-aos-delay="400">
-      <i class="ti-comments mr-2 text-xl leading-none"></i>
-      <?= htmlspecialchars($content['skills']['button']) ?>
-    </button>
-
+    <div class="text-center">
+      <a
+        href="estimate.php"
+        class="inline-flex items-center justify-center mx-auto mt-16 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg"
+        data-aos="zoom-in" data-aos-delay="400">
+        <i class="ti-comments mr-2 text-xl leading-none"></i>
+        <?= htmlspecialchars($content['skills']['button']) ?>
+      </a>
+    </div>
   </div>
 </section>

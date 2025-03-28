@@ -202,55 +202,88 @@
         "description": "Des packs clairs et transparents pour lancer votre présence digitale efficacement, avec tout ce dont vous avez besoin.",
         "packs": [
             {
-                "name": "Starter",
-                "price": "0€",
+                "name": "Pack Vitrine Express",
+                "price": "690€",
                 "features": [
-                    "Audit gratuit de vos besoins",
-                    "Conseils pour lancer votre projet",
-                    "Accès à notre guide de démarrage"
+                    "Site vitrine d'une page",
+                    "Formulaire de contact",
+                    "Référencement de base",
+                    "Carte Google My Business",
+                    "Nom de domaine + Email pro",
+                    "Création de logo incluse",
+                    "Intégration Google Analytics"
                 ],
-                "highlight": false,
-                "button": "Commencer gratuitement",
-                "note": "Idéal pour les curieux ou les projets en réflexion."
-            },
-            {
-                "name": "Standard",
-                "price": "590€",
-                "features": [
-                    "Site vitrine 1 jour livré",
-                    "Design responsive personnalisé",
-                    "1 formulaire de contact",
-                    "Référencement de base inclus"
+                "options": [
+                    "Ajout d’un blog optimisé SEO",
+                    "Ajout de pages supplémentaires",
+                    "Version multilingue du site"
                 ],
                 "highlight": true,
-                "button": "Choisir cette offre",
-                "note": "Le pack parfait pour les indépendants et TPE."
+                "button": "Créer mon site web",
+                "note": "Idéal pour une présence en ligne rapide et professionnelle."
             },
             {
-                "name": "Pro",
-                "price": "990€",
+                "name": "Pack E-Commerce",
+                "price": "1290€",
                 "features": [
-                    "Site + blog ou page SEO",
-                    "Intégration Google Analytics + SEO avancé",
-                    "Création logo + identité graphique",
-                    "Photographies optimisées"
+                    "Création d'un Site e-commerce",
+                    "Paiement en ligne sécurisé",
+                    "Référencement de base",
+                    "Carte Google My Business",
+                    "Nom de domaine + Email pro",
+                    "Création de logo incluse",
+                    "Analyse avec Google Analytics"
+                ],
+                "options": [
+                    "Ajout d’un blog optimisé SEO",
+                    "Ajout de pages supplémentaires",
+                    "Version multilingue du site"
                 ],
                 "highlight": false,
-                "button": "Obtenir mon pack Pro",
-                "note": "Pensé pour les pros qui veulent performer en ligne."
+                "button": "Créer ma boutique",
+                "note": "Parfait pour vendre vos produits en ligne efficacement."
             },
             {
-                "name": "Premium",
-                "price": "1490€",
+                "name": "Pack Marketing Booster",
+                "price": "890€ / mois",
                 "features": [
-                    "Site ou app web sur mesure",
-                    "Automatisations IA & Marketing",
-                    "Tunnel de vente + e-mailing",
-                    "Accompagnement personnalisé 30 jours"
+                    "Automatisation marketing",
+                    "Gestion des réseaux sociaux",
+                    "Génération d’articles de blog",
+                    "Emailings automatisés",
+                    "Création de visuels et contenus IA",
+                    "Analyse des performances",
+                    "Maintenance et évolutions"
+                ],
+                "options": [
+                    "Campagnes Google Ads",
+                    "Plan de contenu personnalisé",
+                    "Calendrier éditorial IA"
                 ],
                 "highlight": false,
-                "button": "Je veux le pack complet",
-                "note": "La solution complète pour passer à la vitesse supérieure."
+                "button": "Créer ma communication",
+                "note": "Boostez votre visibilité sans effort avec nos outils d'automatisation."
+            },
+            {
+                "name": "Pack IA Sur-Mesure",
+                "price": "Sur devis",
+                "features": [
+                    "Audit et analyse des processus",
+                    "Automatisation des tâches",
+                    "Automatisation via IA",
+                    "Développement d’outils internes",
+                    "Intégration de chatbots",
+                    "Dashboards personnalisés",
+                    "Accompagnement sur mesure"
+                ],
+                "options": [
+                    "Connecteurs API métiers",
+                    "IA générative intégrée",
+                    "Interface sur mesure"
+                ],
+                "highlight": false,
+                "button": "Demander un devis",
+                "note": "Libérez le potentiel de l'IA pour votre entreprise."
             }
         ]
     },
@@ -416,6 +449,149 @@
                 "type": "Portfolio",
                 "image": "./imgs/portfolio/portfolio6.webp",
                 "link": "http://samihhabbani.com/"
+            }
+        ]
+    },
+    "faq": {
+        "title": "Questions fréquentes",
+        "description": "Si vous avez une question, elle a probablement déjà été posée. N'hésitez pas à consulter notre FAQ en cliquant sur les questions ci-dessous.",
+        "items": [
+            {
+                "question": "Can I use Landwind in open-source projects?",
+                "answer": [
+                    "Landwind is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.",
+                    "Check out this guide to learn how to get started and start developing websites even faster with components on top of Tailwind CSS."
+                ]
+            },
+            {
+                "question": "Is there a Figma file available?",
+                "answer": [
+                    "Landwind is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.",
+                    "Check out the Figma design system based on the utility classes from Tailwind CSS and components from Landwind."
+                ]
+            }
+        ]
+    },
+    "banner_services": [
+        {
+            "icon": "ti-world",
+            "title": "Création de site web",
+            "description": "Sites vitrines, e-commerce, sur-mesure et optimisés pour le SEO."
+        },
+        {
+            "icon": "ti-stats-up",
+            "title": "Marketing digital",
+            "description": "Réseaux sociaux, Google Ads, stratégie de contenu et visibilité."
+        },
+        {
+            "icon": "ti-palette",
+            "title": "Identité visuelle",
+            "description": "Création de logo, charte graphique et univers de marque cohérent."
+        },
+        {
+            "icon": "ti-light-bulb",
+            "title": "Optimisation par l'IA",
+            "description": "Automatisation, chatbots, analyse de données et gain de productivité."
+        }
+    ],
+    "offer_details": [
+        {
+            "title": "Pack Vitrine Express",
+            "description": "Un site web professionnel en un temps record. Idéal pour les indépendants, artisans ou petites structures souhaitant une présence rapide et soignée sur le web.",
+            "features": [
+                "Livraison en 48h",
+                "Formulaire de contact intégré",
+                "Référencement de base pour Google",
+                "Création de logo incluse"
+            ],
+            "images": [
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1"
+            ]
+        },
+        {
+            "title": "Pack E-Commerce Clé en Main",
+            "description": "Lancez votre boutique en ligne avec une solution complète sur Shopify ou WooCommerce. Design pro, tunnel de vente optimisé, et formation à la gestion.",
+            "features": [
+                "Mise en ligne rapide de votre boutique",
+                "Gestion facile des produits et commandes",
+                "Design responsive et professionnel",
+                "Configuration des paiements sécurisés"
+            ],
+            "images": [
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1"
+            ]
+        },
+        {
+            "title": "Pack Marketing & Automatisation",
+            "description": "Boostez votre visibilité en ligne avec des outils d’automatisation, du contenu généré par IA et des stratégies performantes pour attirer et fidéliser vos clients.",
+            "features": [
+                "Automatisation des posts réseaux sociaux",
+                "Génération automatique d'articles de blog",
+                "Campagnes d’e-mailing ciblées",
+                "Création de visuels par IA"
+            ],
+            "images": [
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1"
+            ]
+        },
+        {
+            "title": "Pack IA & Sur-Mesure",
+            "description": "Nous analysons vos besoins spécifiques et déployons des outils IA sur mesure pour automatiser vos tâches répétitives et améliorer votre rentabilité.",
+            "features": [
+                "Audit stratégique et technique",
+                "Développement de solutions IA dédiées",
+                "Intégration de chatbots",
+                "Automatisation des processus internes"
+            ],
+            "images": [
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
+                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1"
+            ]
+        }
+    ],
+    "presentation": {
+        "intro": {
+            "image": "https://dummyimage.com/1200x500",
+            "name": "Samih Habbani",
+            "role": "Fondateur de l'agence",
+            "bio": "Notre mission est simple : offrir à chaque client un site qui cartonne, sans prise de tête. Notre équipe combine design, technique et stratégie pour faire décoller votre activité en ligne.",
+            "description": "Nous pensons qu’un site bien conçu peut être un véritable levier de croissance. C’est pourquoi chaque pack a été pensé pour répondre à des besoins concrets, avec clarté, efficacité et un bon rapport qualité-prix."
+        },
+        "highlights": [
+            {
+                "image": "https://dummyimage.com/720x400",
+                "subtitle": "Expertise",
+                "title": "Création de sites impactants",
+                "description": "Des sites modernes, rapides, et pensés pour convertir vos visiteurs en clients."
+            },
+            {
+                "image": "https://dummyimage.com/721x401",
+                "subtitle": "Référencement",
+                "title": "SEO dès le départ",
+                "description": "Nos packs intègrent les bonnes pratiques SEO pour une visibilité optimale."
+            },
+            {
+                "image": "https://dummyimage.com/722x402",
+                "subtitle": "Marketing",
+                "title": "Des outils pour vendre",
+                "description": "Formulaire, Google My Business, tracking... tout est là pour développer votre activité."
+            },
+            {
+                "image": "https://dummyimage.com/723x403",
+                "subtitle": "Support",
+                "title": "Accompagnement humain",
+                "description": "Nous restons disponibles même après la mise en ligne pour vous aider à évoluer."
             }
         ]
     }

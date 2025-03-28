@@ -3,9 +3,9 @@
 
       <!-- Titre + description -->
       <div class="w-full mb-20 text-center" data-aos="fade-down">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-white">
+      <h2 class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-4">
         <?= htmlspecialchars($content['process']['title']) ?>
-      </h1>
+      </h2>
       <p class="lg:w-1/2 w-full mx-auto leading-relaxed text-gray-500 dark:text-gray-400">
         <?= htmlspecialchars($content['process']['description']) ?>
       </p>
@@ -42,13 +42,9 @@
 
         <!-- CTA -->
         <div class="mt-8" data-aos="fade-up" data-aos-delay="500">
-          <a href="#contact" class="inline-flex items-center text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">
+          <a href="estimate.php" class="inline-flex items-center text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">
             <i class="ti-comments mr-2 text-xl leading-none"></i>
             <?= htmlspecialchars($content['process']['button']) ?>
-            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg> -->
           </a>
         </div>
       </div>

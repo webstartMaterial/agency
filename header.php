@@ -3,28 +3,32 @@
     <div data-aos="fade-right"
       class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
 
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">
+      <h1
+        class="sm:text-4xl lg:text-4xl text-4xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-6">
         <?= htmlspecialchars($content['header']['title_line1']) ?>
         <br class="hidden lg:inline-block">
         <?= htmlspecialchars($content['header']['title_line2']) ?>
       </h1>
+
 
       <p class="mb-8 leading-relaxed">
         <?= htmlspecialchars($content['header']['paragraph']) ?>
       </p>
 
       <div class="flex justify-center">
-        <button
+        <a
+          href="?#pricing"
           class="inline-flex items-center text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">
           <i class="ti-bag mr-2 text-xl leading-none"></i>
           <?= htmlspecialchars($content['header']['button1']) ?>
-        </button>
+        </a>
 
-        <button
+        <a
+          href="estimate.php"
           class="ml-4 inline-flex items-center text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 rounded text-lg">
           <i class="ti-write mr-2 text-xl leading-none"></i>
           <?= htmlspecialchars($content['header']['button2']) ?>
-        </button>
+        </a>
 
       </div>
 
@@ -36,3 +40,5 @@
     </div>
   </div>
 </section>
+
+

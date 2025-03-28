@@ -1,10 +1,11 @@
-<section class="text-gray-600 dark:text-gray-300 body-font overflow-hidden bg-white dark:bg-gray-900"
+<section id="pricing" class="text-gray-600 dark:text-gray-300 body-font overflow-hidden bg-white dark:bg-gray-900"
   data-aos="fade-up">
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-white mb-4">
+      <h2
+        class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-4">
         <?= htmlspecialchars($content['pricing']['title']) ?>
-      </h1>
+      </h2>
       <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 dark:text-gray-400">
         <?= htmlspecialchars($content['pricing']['description']) ?>
       </p>
@@ -12,7 +13,6 @@
         <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
       </div>
     </div>
-
 
     <div class="flex flex-wrap -m-4">
       <?php foreach ($content['pricing']['packs'] as $index => $pack): ?>
@@ -47,21 +47,35 @@
               </p>
             <?php endforeach; ?>
 
-            <button
-              class="flex items-center mt-auto text-white <?= $pack['highlight'] ? 'bg-purple-500 hover:bg-purple-600' : 'bg-gray-400 dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-gray-500' ?> border-0 py-2 px-4 w-full focus:outline-none rounded transition">
-              <?= htmlspecialchars($pack['button']) ?>
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
+            <div class="mt-auto">
+              <button
+                class="mt-4 flex items-center w-full text-white <?= $pack['highlight'] ? 'bg-purple-500 hover:bg-purple-600' : 'bg-gray-400 dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-gray-500' ?> border-0 py-2 px-4 focus:outline-none rounded transition">
+                <?= htmlspecialchars($pack['button']) ?>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
 
-            <p class="text-xs text-gray-500 dark:text-gray-400 mt-3">
-              <?= htmlspecialchars($pack['note']) ?>
-            </p>
+              <p class="text-sm italic text-center text-purple-600 dark:text-purple-400 font-medium mt-4 mb-4">
+                <?= htmlspecialchars($pack['note']) ?>
+              </p>
+            </div>
+
+            <?php if (!empty($pack['options'])): ?>
+              <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+                <p class="text-xs text-gray-500 dark:text-gray-400 font-semibold mb-2 uppercase tracking-wide">Options
+                  disponibles</p>
+                <?php foreach ($pack['options'] as $option): ?>
+                  <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">• <?= htmlspecialchars($option) ?></p>
+                <?php endforeach; ?>
+              </div>
+            <?php endif; ?>
+
           </div>
         </div>
       <?php endforeach; ?>
     </div>
+
   </div>
 </section>

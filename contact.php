@@ -2,9 +2,10 @@
 
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-white mb-4">
+      <h2
+        class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-4">
         <?= htmlspecialchars($content['contact']['title']) ?>
-      </h1>
+      </h2>
       <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 dark:text-gray-400">
         <?= htmlspecialchars($content['contact']['description']) ?>
       </p>
@@ -50,19 +51,19 @@
 
         <div class="relative mb-4">
           <label for="name" class="leading-7 text-sm text-gray-600 dark:text-gray-300">Nom</label>
-          <input type="text" id="name" name="name"
+          <input type="text" id="name" name="name" placeholder="Votre nom"
             class="w-full bg-white dark:bg-gray-700 rounded border border-gray-300 dark:border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-900 dark:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
 
         <div class="relative mb-4">
           <label for="email" class="leading-7 text-sm text-gray-600 dark:text-gray-300">Email</label>
-          <input type="email" id="email" name="email"
+          <input type="email" id="email" name="email" placeholder="votre@email.com"
             class="w-full bg-white dark:bg-gray-700 rounded border border-gray-300 dark:border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-900 dark:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
 
         <div class="relative mb-4">
           <label for="message" class="leading-7 text-sm text-gray-600 dark:text-gray-300">Message</label>
-          <textarea id="message" name="message"
+          <textarea id="message" name="message" placeholder="Écrivez votre message ici..."
             class="w-full bg-white dark:bg-gray-700 rounded border border-gray-300 dark:border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-900 dark:text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
         </div>
 

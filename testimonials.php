@@ -2,7 +2,8 @@
   <div class="container px-5 py-24 mx-auto">
 
     <div class="text-center mb-20">
-      <h2 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-white mb-4">
+      <h2
+        class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-4">
         <?= htmlspecialchars($content['testimonials']['title']) ?>
       </h2>
       <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 dark:text-gray-400">
