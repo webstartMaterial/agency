@@ -15,22 +15,20 @@
         <?= htmlspecialchars($content['header']['paragraph']) ?>
       </p>
 
-      <div class="flex justify-center">
-        <a
-          href="our-services.php"
-          class="inline-flex items-center text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="our-services.php"
+          class="inline-flex items-center text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg w-full sm:w-auto justify-center">
           <i class="ti-bag mr-2 text-xl leading-none"></i>
           <?= htmlspecialchars($content['header']['button1']) ?>
         </a>
 
-        <a
-          href="our-services.php?#estimate"
-          class="ml-4 inline-flex items-center text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 rounded text-lg">
+        <a href="our-services.php?#estimate"
+          class="inline-flex items-center text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 rounded text-lg w-full sm:w-auto justify-center">
           <i class="ti-write mr-2 text-xl leading-none"></i>
           <?= htmlspecialchars($content['header']['button2']) ?>
         </a>
-
       </div>
+
 
     </div>
 
@@ -40,5 +38,3 @@
     </div>
   </div>
 </section>
-
-

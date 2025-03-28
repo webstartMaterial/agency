@@ -1,4 +1,10 @@
 {
+    "head": {
+        "title": "Création de sites performants & modernes",
+        "description": "Agence web spécialisée dans la création de sites vitrines, e-commerce et solutions sur-mesure avec design soigné et performance optimale.",
+        "author": "Samih Habbani",
+        "theme_color": "#4c1d95"
+    },
     "header": {
         "title_line1": "Création de sites web modernes",
         "title_line2": "Pour entrepreneurs et petites entreprises",
@@ -6,27 +12,27 @@
         "button1": "Voir nos offres",
         "button2": "Demander un devis",
         "image": "./imgs/header.webp",
-        "brand": "Ademie WS",
+        "brand": "Mon Agence Web",
         "nav": [
             {
-                "label": "Pourquoi nous?",
-                "href": "?#why"
+                "label": "Pourquoi nous ?",
+                "href": "/#why"
             },
             {
                 "label": "Nos offres",
-                "href": "?#offers"
+                "href": "/#offers"
             },
             {
                 "label": "Notre équipe",
-                "href": "?#team"
+                "href": "/#team"
             },
             {
                 "label": "Réalisations",
-                "href": "?#portfolio"
+                "href": "/#portfolio"
             },
             {
                 "label": "Nous contacter",
-                "href": "?#contact"
+                "href": "/#contact"
             }
         ],
         "languages": {
@@ -397,8 +403,8 @@
             "message": "Inscrivez-vous à notre newsletter pour ne rien manquer de nos nouveautés."
         },
         "bottom": {
-            "brand": "Ademie WS",
-            "copyright": "© 2025 Ademie WS",
+            "brand": "Mon Agene Web",
+            "copyright": "© 2025 Mon Agene Web",
             "twitter": "@ademiews",
             "socials": {
                 "facebook": "https://facebook.com/ademiews",
