@@ -1,4 +1,4 @@
-<section class="text-gray-600 dark:text-gray-300 body-font relative bg-gray-100 dark:bg-gray-900" id="contact">
+<section id="contact" class="text-gray-600 dark:text-gray-300 body-font relative bg-gray-100 dark:bg-gray-900" id="contact">
 
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
@@ -42,36 +42,122 @@
       </div>
 
       <!-- Formulaire -->
-      <div class="lg:w-1/3 md:w-1/2 bg-white dark:bg-gray-800 p-4 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
-        data-aos="fade-left">
-        <h2 class="text-gray-900 dark:text-white text-lg mb-1 font-medium title-font">Contactez-nous</h2>
-        <p class="leading-relaxed mb-5 text-gray-600 dark:text-gray-400">
-          <?= htmlspecialchars($content['contact']['form_intro']) ?>
-        </p>
 
-        <div class="relative mb-4">
-          <label for="name" class="leading-7 text-sm text-gray-600 dark:text-gray-300">Nom</label>
-          <input type="text" id="name" name="name" placeholder="Votre nom"
-            class="w-full bg-white dark:bg-gray-700 rounded border border-gray-300 dark:border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-900 dark:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+      <div class="lg:w-1/2 md:w-full w-full mx-auto" data-aos="fade-left">
+        <!-- Tabs -->
+        <div class="mb-6 border-b border-gray-300 dark:border-gray-700 flex space-x-4" role="tablist">
+          <button id="tab-contact"
+            class="tab-btn text-sm font-medium text-gray-900 dark:text-white py-2 px-4 border-b-2 border-purple-500 focus:outline-none active"
+            data-target="contact-form">
+            Contact simple
+          </button>
+          <button id="tab-devis"
+            class="tab-btn text-sm font-medium text-gray-600 dark:text-gray-300 py-2 px-4 hover:text-gray-900 dark:hover:text-white"
+            data-target="devis-form">
+            Demande de devis
+          </button>
         </div>
 
-        <div class="relative mb-4">
-          <label for="email" class="leading-7 text-sm text-gray-600 dark:text-gray-300">Email</label>
-          <input type="email" id="email" name="email" placeholder="votre@email.com"
-            class="w-full bg-white dark:bg-gray-700 rounded border border-gray-300 dark:border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-900 dark:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        <!-- Formulaires -->
+        <div id="contact-form" class="tab-content block">
+          <form action="#" method="POST" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+            <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Contactez-nous</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-4"><?= htmlspecialchars($content['contact']['form_intro']) ?>
+            </p>
+
+            <div class="mb-4">
+              <label class="block text-sm text-gray-600 dark:text-gray-300">Nom</label>
+              <input type="text" name="name" placeholder="Votre nom"
+                class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-sm text-gray-600 dark:text-gray-300">Email</label>
+              <input type="email" name="email" placeholder="votre@email.com"
+                class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-sm text-gray-600 dark:text-gray-300">Message</label>
+              <textarea name="message" rows="4" placeholder="Votre message ici..."
+                class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded transition">Envoyer</button>
+
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-3">Nous répondons sous 24h, du lundi au vendredi.</p>
+          </form>
         </div>
 
-        <div class="relative mb-4">
-          <label for="message" class="leading-7 text-sm text-gray-600 dark:text-gray-300">Message</label>
-          <textarea id="message" name="message" placeholder="Écrivez votre message ici..."
-            class="w-full bg-white dark:bg-gray-700 rounded border border-gray-300 dark:border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-900 dark:text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        <div id="devis-form" class="tab-content hidden">
+          <form action="#" method="POST" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+            <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-4"><?= htmlspecialchars($content['estimate']['title']) ?></h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-4"><?= htmlspecialchars($content['estimate']['description']) ?>
+
+            <div class="mb-4">
+              <label class="block text-sm text-gray-600 dark:text-gray-300">Nom</label>
+              <input type="text" name="name" placeholder="Votre nom"
+                class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-sm text-gray-600 dark:text-gray-300">Email</label>
+              <input type="email" name="email" placeholder="votre@email.com"
+                class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-sm text-gray-600 dark:text-gray-300">Offre choisie</label>
+              <select name="offer"
+                class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500">
+                <?php foreach ($content['pricing']['packs'] as $pack): ?>
+                  <option value="<?= htmlspecialchars($pack['name']) ?>">
+                    <?= htmlspecialchars($pack['name']) ?> – <?= htmlspecialchars($pack['price']) ?>
+                  </option>
+                <?php endforeach; ?>
+              </select>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-sm text-gray-600 dark:text-gray-300">Vos besoins</label>
+              <textarea name="message" rows="5" placeholder="Fonctionnalités, attentes, budget, délais..."
+                class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded transition">
+              Envoyer la demande
+              <i class="ti-arrow-right ml-2"></i>
+            </button>
+          </form>
         </div>
-
-        <button
-          class="text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Envoyer</button>
-
-        <p class="text-xs text-gray-500 dark:text-gray-400 mt-3">Nous répondons sous 24h, du lundi au vendredi.</p>
       </div>
+
+
     </div>
   </div>
 </section>
+
+<script>
+  document.querySelectorAll(".tab-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Enlève la classe active + bordure à tous
+      document.querySelectorAll(".tab-btn").forEach((b) => {
+        b.classList.remove("border-b-2", "border-purple-500", "text-gray-900", "dark:text-white");
+        b.classList.add("text-gray-600", "dark:text-gray-300");
+      });
+
+      // Cache tous les contenus
+      document.querySelectorAll(".tab-content").forEach((tab) => tab.classList.add("hidden"));
+
+      // Active le bon
+      btn.classList.add("border-b-2", "border-purple-500", "text-gray-900", "dark:text-white");
+      btn.classList.remove("text-gray-600", "dark:text-gray-300");
+
+      const target = btn.getAttribute("data-target");
+      document.getElementById(target).classList.remove("hidden");
+    });
+  });
+</script>
+

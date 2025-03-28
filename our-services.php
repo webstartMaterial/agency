@@ -1,17 +1,35 @@
 <?php require_once("./haut_site.php"); ?>
 <?php require_once("./nav.php"); ?>
 
+<div class="container px-5 py-24 mx-auto flex flex-col">
+
+  <div class="flex">
+    <nav class="flex text-sm text-gray-500 dark:text-gray-300 space-x-2 items-center" aria-label="Breadcrumb">
+      <a href="/" class="inline-flex items-center hover:text-purple-600 transition">
+        <i class="bi bi-house-door-fill mr-1"></i> Accueil
+      </a>
+      <span>/</span>
+      <span class="inline-flex items-center text-purple-600 font-semibold">
+        <i class="bi bi-lightbulb-fill mr-1"></i> Nos Offres
+      </span>
+    </nav>
+  </div>
+</div>
+
+
 <section class="text-gray-600 dark:text-gray-300 body-font overflow-hidden bg-white dark:bg-gray-900">
-  <div class="container px-5 py-24 mx-auto flex flex-col">
+  <div class="container px-5 mx-auto flex flex-col">
     <div class="lg:w-6/6 mx-auto">
       <div class="rounded-lg h-64 overflow-hidden">
-        <img alt="cover" class="object-cover object-center h-full w-full" src="<?= htmlspecialchars($content['presentation']['intro']['image']) ?>">
+        <img alt="cover" class="object-cover object-center h-full w-full"
+          src="<?= htmlspecialchars($content['presentation']['intro']['image']) ?>">
       </div>
       <div class="flex flex-col sm:flex-row mt-10">
         <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400 dark:bg-gray-700 dark:text-gray-300">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-              stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+          <div
+            class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400 dark:bg-gray-700 dark:text-gray-300">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-10 h-10" viewBox="0 0 24 24">
               <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>
             </svg>
@@ -24,91 +42,34 @@
             <p class="text-base"><?= htmlspecialchars($content['presentation']['intro']['role']) ?></p>
           </div>
         </div>
-        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-          <p class="leading-relaxed text-lg mb-4"><?= htmlspecialchars($content['presentation']['intro']['description']) ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <div
+          class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+          <p class="leading-relaxed text-lg mb-4">
+            <?= htmlspecialchars($content['presentation']['intro']['description']) ?>
+          </p>
 
-
-<section class="text-gray-600 dark:text-gray-300 body-font overflow-hidden bg-white dark:bg-gray-900">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap w-full mb-20">
-      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-        <h2 class="sm:text-3xl text-2xl font-extrabold title-font text-gray-900 dark:text-white mb-2">
-          Pourquoi choisir notre agence ?
-        </h2>
-        <div class="h-1 w-20 bg-purple-500 rounded"></div>
-      </div>
-      <p class="lg:w-1/2 w-full leading-relaxed text-gray-500 dark:text-gray-400">
-        Nous mettons tout en œuvre pour proposer des solutions fiables, personnalisées et rapides à mettre en place.
-      </p>
-    </div>
-    <div class="flex flex-wrap -m-4">
-      <?php foreach ($content['presentation']['highlights'] as $highlight): ?>
-        <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg h-full">
-            <img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= htmlspecialchars($highlight['image']) ?>" alt="highlight">
-            <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font uppercase">
-              <?= htmlspecialchars($highlight['subtitle']) ?>
-            </h3>
-            <h2 class="text-lg text-gray-900 dark:text-white font-medium title-font mb-2">
-              <?= htmlspecialchars($highlight['title']) ?>
-            </h2>
-            <p class="leading-relaxed text-base text-gray-600 dark:text-gray-300">
-              <?= htmlspecialchars($highlight['description']) ?>
-            </p>
+          <div class="mt-8">
+            <a href="#packs"
+              class="inline-flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white text-lg font-semibold rounded-2xl shadow-lg transition duration-300 ease-in-out">
+              Découvrir nos offres
+              <svg class="w-5 h-5 ml-2 animate-pulse" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
           </div>
         </div>
-      <?php endforeach; ?>
+
+
+      </div>
     </div>
   </div>
 </section>
 
 
 
-<!-- ARGUMENTAIRE -->
-
-<section class="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-20">
-  <div class="container mx-auto px-5">
-
-    <?php foreach ($content['offer_details'] as $index => $offer): ?>
-      <div class="flex flex-col <?= $index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse' ?> items-center gap-10 mb-20"
-        data-aos="fade-up">
-
-        <!-- Texte -->
-        <div class="lg:w-1/2 w-full <?= $index % 2 === 0 ? 'lg:pr-10' : 'lg:pl-10' ?>">
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
-            <?= htmlspecialchars($offer['title']) ?>
-          </h2>
-          <p class="text-gray-600 dark:text-gray-400 mb-6">
-            <?= htmlspecialchars($offer['description']) ?>
-          </p>
-          <ul class="space-y-4 border-t border-gray-300 dark:border-gray-700 pt-6">
-            <?php foreach ($offer['features'] as $feature): ?>
-              <li class="flex items-start">
-                <i class="ti-check text-purple-500 text-lg mr-3 mt-1"></i>
-                <span><?= htmlspecialchars($feature) ?></span>
-              </li>
-            <?php endforeach; ?>
-          </ul>
-        </div>
-
-        <!-- Images -->
-        <div class="lg:w-1/2 w-full grid grid-cols-2 gap-4" data-aos="zoom-in">
-          <?php foreach ($offer['images'] as $image): ?>
-            <img src="<?= htmlspecialchars($image) ?>" alt="feature" class="rounded-lg shadow w-full h-auto object-cover">
-          <?php endforeach; ?>
-        </div>
-
-      </div>
-    <?php endforeach; ?>
 
 
-  </div>
-</section>
 
 <!-- PRICING -->
 

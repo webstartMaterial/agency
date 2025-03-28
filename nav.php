@@ -4,7 +4,7 @@
 ">
   <div class="container mx-auto flex items-center justify-between px-5 py-4">
     <!-- Logo + Marque -->
-    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="/">
+    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="index.php">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
            class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">

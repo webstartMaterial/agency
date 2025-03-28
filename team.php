@@ -1,4 +1,4 @@
-<section class="text-gray-600 dark:text-gray-300 body-font bg-gray-100 dark:bg-gray-900" data-aos="fade-up">
+<section id="team" class="text-gray-600 dark:text-gray-300 body-font bg-gray-100 dark:bg-gray-900" data-aos="fade-up">
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
       <h2

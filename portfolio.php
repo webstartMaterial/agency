@@ -1,4 +1,4 @@
-<section class="text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-900 body-font">
+<section id="portfolio" class="text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
     <div class="flex w-full mb-20 flex-wrap">
       <div class="lg:w-1/3 w-full mb-4" data-aos="fade-right">

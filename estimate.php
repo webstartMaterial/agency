@@ -1,4 +1,4 @@
-<section class="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-16">
+<section id="estimate" class="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-16">
   <div class="container px-5 mx-auto max-w-3xl">
     <div class="text-center mb-12">
       <h2 class="sm:text-3xl text-2xl font-extrabold title-font text-gray-900 dark:text-white mb-4">

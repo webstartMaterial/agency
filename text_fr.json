@@ -9,20 +9,24 @@
         "brand": "Ademie WS",
         "nav": [
             {
-                "label": "Accueil",
-                "href": "/"
+                "label": "Pourquoi nous?",
+                "href": "?#why"
             },
             {
-                "label": "Services",
-                "href": "/services"
+                "label": "Nos offres",
+                "href": "?#offers"
             },
             {
-                "label": "Portfolio",
-                "href": "/portfolio"
+                "label": "Notre équipe",
+                "href": "?#team"
             },
             {
-                "label": "Contact",
-                "href": "/contact"
+                "label": "Réalisations",
+                "href": "?#portfolio"
+            },
+            {
+                "label": "Nous contacter",
+                "href": "?#contact"
             }
         ],
         "languages": {
@@ -394,7 +398,7 @@
         },
         "bottom": {
             "brand": "Ademie WS",
-            "copyright": "© 2024 Ademie WS",
+            "copyright": "© 2025 Ademie WS",
             "twitter": "@ademiews",
             "socials": {
                 "facebook": "https://facebook.com/ademiews",
@@ -457,17 +461,63 @@
         "description": "Si vous avez une question, elle a probablement déjà été posée. N'hésitez pas à consulter notre FAQ en cliquant sur les questions ci-dessous.",
         "items": [
             {
-                "question": "Can I use Landwind in open-source projects?",
+                "question": "L’hébergement est-il compris ? Et le nom de domaine?",
                 "answer": [
-                    "Landwind is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.",
-                    "Check out this guide to learn how to get started and start developing websites even faster with components on top of Tailwind CSS."
+                    "Oui, tous nos packs incluent une solution d’hébergement fiable et rapide, ou nous vous aidons à connecter le vôtre. En revanche, le nom de domaine reste à votre charge."
                 ]
             },
             {
-                "question": "Is there a Figma file available?",
+                "question": "Est-ce que je peux modifier mon site après livraison ?",
                 "answer": [
-                    "Landwind is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.",
-                    "Check out the Figma design system based on the utility classes from Tailwind CSS and components from Landwind."
+                    "Oui, tous nos sites sont livrés avec une interface simple pour que vous puissiez modifier vos textes, images ou produits en toute autonomie."
+                ]
+            },
+            {
+                "question": "Avez-vous besoin que je fournisse du contenu (textes, images) ?",
+                "answer": [
+                    "Nous pouvons créer un site avec vos contenus si vous les avez. Sinon, nous vous accompagnons pour les générer avec notre aide ou avec l’IA."
+                ]
+            },
+            {
+                "question": "Combien de temps faut-il pour créer mon site ?",
+                "answer": [
+                    "Le Pack Vitrine Express est livré en 48h. Les autres packs varient entre 5 à 10 jours selon votre projet."
+                ]
+            },
+            {
+                "question": "Est-ce que mon site sera visible sur Google ?",
+                "answer": [
+                    "Oui, tous nos sites incluent une optimisation SEO de base pour être bien référencés sur Google."
+                ]
+            },
+            {
+                "question": "Puis-je utiliser mon propre nom de domaine ?",
+                "answer": [
+                    "Oui, nous configurons votre site avec votre nom de domaine existant ou vous aidons à en acheter un."
+                ]
+            },
+            {
+                "question": "Que se passe-t-il si j’ai un problème avec le site ?",
+                "answer": [
+                    "Nous proposons un support réactif pour vous aider à tout moment, selon l’offre que vous choisissez."
+                ]
+            },
+            {
+                "question": "Est-ce que vous vous occupez de la maintenance ?",
+                "answer": [
+                    "Oui, nous proposons des options de maintenance mensuelle pour garder votre site à jour, sécurisé et performant."
+                ]
+            },
+            {
+                "question": "Le paiement est-il unique ou mensuel ?",
+                "answer": [
+                    "Nos packs sont généralement à paiement unique. Certaines options (comme la maintenance) peuvent être sous forme d’abonnement mensuel."
+                ]
+            },
+            {
+                "question": "Puis-je vous contacter facilement en cas de besoin ?",
+                "answer": [
+                    "Bien sûr ! Vous pouvez nous contacter par email, téléphone ou WhatsApp. Nous restons disponibles et réactifs."
                 ]
             }
         ]
@@ -494,75 +544,79 @@
             "description": "Automatisation, chatbots, analyse de données et gain de productivité."
         }
     ],
-    "offer_details": [
-        {
-            "title": "Pack Vitrine Express",
-            "description": "Un site web professionnel en un temps record. Idéal pour les indépendants, artisans ou petites structures souhaitant une présence rapide et soignée sur le web.",
-            "features": [
-                "Livraison en 48h",
-                "Formulaire de contact intégré",
-                "Référencement de base pour Google",
-                "Création de logo incluse"
-            ],
-            "images": [
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1"
-            ]
-        },
-        {
-            "title": "Pack E-Commerce Clé en Main",
-            "description": "Lancez votre boutique en ligne avec une solution complète sur Shopify ou WooCommerce. Design pro, tunnel de vente optimisé, et formation à la gestion.",
-            "features": [
-                "Mise en ligne rapide de votre boutique",
-                "Gestion facile des produits et commandes",
-                "Design responsive et professionnel",
-                "Configuration des paiements sécurisés"
-            ],
-            "images": [
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1"
-            ]
-        },
-        {
-            "title": "Pack Marketing & Automatisation",
-            "description": "Boostez votre visibilité en ligne avec des outils d’automatisation, du contenu généré par IA et des stratégies performantes pour attirer et fidéliser vos clients.",
-            "features": [
-                "Automatisation des posts réseaux sociaux",
-                "Génération automatique d'articles de blog",
-                "Campagnes d’e-mailing ciblées",
-                "Création de visuels par IA"
-            ],
-            "images": [
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1"
-            ]
-        },
-        {
-            "title": "Pack IA & Sur-Mesure",
-            "description": "Nous analysons vos besoins spécifiques et déployons des outils IA sur mesure pour automatiser vos tâches répétitives et améliorer votre rentabilité.",
-            "features": [
-                "Audit stratégique et technique",
-                "Développement de solutions IA dédiées",
-                "Intégration de chatbots",
-                "Automatisation des processus internes"
-            ],
-            "images": [
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1",
-                "https://dummyimage.com/300x200/8e44ad/ffffff&text=Image+1"
-            ]
-        }
-    ],
+    "offer_details": {
+        "title": "Des offres taillées pour vos objectifs",
+        "description": "Chaque pack a été pensé pour répondre à un besoin précis. Que vous lanciez votre activité, développiez une boutique en ligne, cherchiez à automatiser votre communication ou à intégrer l’intelligence artificielle dans vos process, nous avons une solution adaptée à votre ambition.",
+        "items": [
+            {
+                "title": "Pack Vitrine Express",
+                "description": "Un site web professionnel en un temps record. Idéal pour les indépendants, artisans ou petites structures souhaitant une présence rapide et soignée sur le web.",
+                "features": [
+                    "Livraison en 48h",
+                    "Formulaire de contact intégré",
+                    "Référencement de base pour Google",
+                    "Création de logo incluse"
+                ],
+                "images": [
+                    "./imgs/services/pack-1_1.webp",
+                    "./imgs/services/pack-1_2.webp",
+                    "./imgs/services/pack-1_3.webp",
+                    "./imgs/services/pack-1_4.webp"
+                ]
+            },
+            {
+                "title": "Pack E-Commerce Clé en Main",
+                "description": "Lancez votre boutique en ligne avec une solution complète sur Shopify ou WooCommerce. Design pro, tunnel de vente optimisé, et formation à la gestion.",
+                "features": [
+                    "Mise en ligne rapide de votre boutique",
+                    "Gestion facile des produits et commandes",
+                    "Design responsive et professionnel",
+                    "Configuration des paiements sécurisés"
+                ],
+                "images": [
+                    "./imgs/services/pack-2_1.webp",
+                    "./imgs/services/pack-2_2.webp",
+                    "./imgs/services/pack-2_3.webp",
+                    "./imgs/services/pack-2_4.webp"
+                ]
+            },
+            {
+                "title": "Pack Marketing & Automatisation",
+                "description": "Boostez votre visibilité en ligne avec des outils d’automatisation, du contenu généré par IA et des stratégies performantes pour attirer et fidéliser vos clients.",
+                "features": [
+                    "Automatisation des posts réseaux sociaux",
+                    "Génération automatique d'articles de blog",
+                    "Campagnes d’e-mailing ciblées",
+                    "Création de visuels par IA"
+                ],
+                "images": [
+                    "./imgs/services/pack-3_1.webp",
+                    "./imgs/services/pack-3_2.webp",
+                    "./imgs/services/pack-3_3.webp",
+                    "./imgs/services/pack-3_4.webp"
+                ]
+            },
+            {
+                "title": "Pack IA & Sur-Mesure",
+                "description": "Nous analysons vos besoins spécifiques et déployons des outils IA sur mesure pour automatiser vos tâches répétitives et améliorer votre rentabilité.",
+                "features": [
+                    "Audit stratégique et technique",
+                    "Développement de solutions IA dédiées",
+                    "Intégration de chatbots",
+                    "Automatisation des processus internes"
+                ],
+                "images": [
+                    "./imgs/services/pack-4_1.webp",
+                    "./imgs/services/pack-4_2.webp",
+                    "./imgs/services/pack-4_3.webp",
+                    "./imgs/services/pack-4_4.webp"
+                ]
+            }
+        ]
+    },
     "presentation": {
         "intro": {
-            "image": "https://dummyimage.com/1200x500",
+            "image": "./imgs/services/header.webp",
             "name": "Samih Habbani",
             "role": "Fondateur de l'agence",
             "bio": "Notre mission est simple : offrir à chaque client un site qui cartonne, sans prise de tête. Notre équipe combine design, technique et stratégie pour faire décoller votre activité en ligne.",
@@ -570,29 +624,44 @@
         },
         "highlights": [
             {
-                "image": "https://dummyimage.com/720x400",
+                "image": "./imgs/services/reason-1.webp",
                 "subtitle": "Expertise",
                 "title": "Création de sites impactants",
                 "description": "Des sites modernes, rapides, et pensés pour convertir vos visiteurs en clients."
             },
             {
-                "image": "https://dummyimage.com/721x401",
+                "image": "./imgs/services/reason-2.webp",
                 "subtitle": "Référencement",
                 "title": "SEO dès le départ",
                 "description": "Nos packs intègrent les bonnes pratiques SEO pour une visibilité optimale."
             },
             {
-                "image": "https://dummyimage.com/722x402",
+                "image": "./imgs/services/reason-3.webp",
                 "subtitle": "Marketing",
                 "title": "Des outils pour vendre",
                 "description": "Formulaire, Google My Business, tracking... tout est là pour développer votre activité."
             },
             {
-                "image": "https://dummyimage.com/723x403",
+                "image": "./imgs/services/reason-4.webp",
                 "subtitle": "Support",
                 "title": "Accompagnement humain",
                 "description": "Nous restons disponibles même après la mise en ligne pour vous aider à évoluer."
             }
         ]
+    },
+    "estimate": {
+        "title": "Demande de devis",
+        "description": "Vous avez trouvé une offre qui vous intéresse ? Remplissez ce formulaire pour obtenir un devis adapté à vos besoins."
+    },
+    "chat": {
+        "toggle_label": "Chat",
+        "header_title": "Assistance en ligne",
+        "placeholder_name": "Votre prénom",
+        "placeholder_email": "Votre email",
+        "placeholder_message": "Votre message...",
+        "start_button": "Commencer la conversation",
+        "send_button": "Envoyer",
+        "start_message": "Commencez la conversation !",
+        "reset_button": "Réinitialiser le chat"
     }
 }
