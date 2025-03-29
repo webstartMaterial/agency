@@ -1,1 +1,1 @@
-putenv('APP_ENV=local');
+APP_ENV=local

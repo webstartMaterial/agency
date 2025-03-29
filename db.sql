@@ -2,7 +2,8 @@
 CREATE TABLE `conversations` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `email` VARCHAR(255) NOT NULL,
-  `name` VARCHAR(255) DEFAULT NULL,
+  `name` VARCHAR(255) NOT NULL,
+  `phone` VARCHAR(255) NOT NULL,
   `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
   `updated_at` DATETIME,
   `status` ENUM('active', 'archived') DEFAULT 'active'

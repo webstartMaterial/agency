@@ -664,6 +664,7 @@
         "header_title": "Assistance en ligne",
         "placeholder_name": "Votre prénom",
         "placeholder_email": "Votre email",
+        "placeholder_phone": "Votre téléphone",
         "placeholder_message": "Votre message...",
         "start_button": "Commencer la conversation",
         "send_button": "Envoyer",
