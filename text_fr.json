@@ -12,7 +12,7 @@
         "button1": "Voir nos offres",
         "button2": "Demander un devis",
         "image": "./imgs/header.webp",
-        "brand": "Mon Agence Web",
+        "brand": "Click & Visible",
         "nav": [
             {
                 "label": "Pourquoi nous ?",
@@ -439,9 +439,9 @@
             "message": "Inscrivez-vous à notre newsletter pour ne rien manquer de nos nouveautés."
         },
         "bottom": {
-            "brand": "Mon Agence Web",
-            "copyright": "© 2025 Mon Agence Web",
-            "twitter": "@MonAgenceWeb",
+            "brand": "Click & Visible",
+            "copyright": "© 2025 Click & Visible",
+            "twitter": "@Click&Visible",
             "socials": {
                 "facebook": "https://facebook.com/ademiews",
                 "twitter": "https://twitter.com/ademiews",
