@@ -42,17 +42,15 @@
         </div>
 
         <!-- Message Input -->
-        <form id="chat-form" class="border-t border-gray-200 dark:border-gray-700 p-3 flex flex-col sm:flex-row gap-2 hidden">
+        <form id="chat-form" class="border-t border-gray-200 dark:border-gray-700 p-3 flex items-center gap-2 hidden">
             <input type="text" id="chat-input"
                 placeholder="<?= htmlspecialchars($content['chat']['placeholder_message']) ?>"
                 class="flex-1 px-3 py-2 border rounded text-sm bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-white dark:placeholder-white">
 
-            <button type="submit"
-                class="bg-purple-500 hover:bg-purple-600 text-white text-sm px-4 py-2 rounded w-full sm:w-auto">
+            <button type="submit" class="bg-purple-500 hover:bg-purple-600 text-white text-sm px-4 py-2 rounded">
                 <?= htmlspecialchars($content['chat']['send_button']) ?>
             </button>
         </form>
-
 
         <div class="p-2 text-center text-xs">
             <button onclick="localStorage.clear(); location.reload();"
