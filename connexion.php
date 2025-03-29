@@ -1,10 +1,20 @@
 <?php
 // db.php : Connexion PDO à la base de données
 
-$host = 'localhost';
-$dbname = 'agency';
-$username = 'root'; // À adapter
-$password = 'root';     // À adapter
+// Définis le mode ici : 'prod' ou 'local'
+$env = getenv('APP_ENV') ?: 'local'; // Par défaut en local
+
+if ($env === 'prod') {
+    $host = 'okbqknlagency.mysql.db';
+    $dbname = 'okbqknlagency';
+    $username = 'okbqknlagency';
+    $password = 'Zizou2024';
+} else {
+    $host = 'localhost';
+    $dbname = 'agency';
+    $username = 'root';
+    $password = 'root';
+}
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);

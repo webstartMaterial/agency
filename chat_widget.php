@@ -147,7 +147,10 @@
         });
 
         // 🔄 Rafraîchissement régulier des messages
+        // 🔄 Rafraîchissement régulier des messages avec détection de nouveaux messages admin
         function startPolling() {
+            let lastCount = 0;
+
             setInterval(async function () {
                 const convId = sessionStorage.getItem("conversation_id");
                 if (!convId) return;
@@ -157,6 +160,7 @@
 
                 const messagesDiv = chatMessages;
                 messagesDiv.innerHTML = "";
+
                 data.forEach(msg => {
                     const align = msg.sender === "admin" ? "text-left" : "text-right";
                     const bg = msg.sender === "admin" ? "bg-gray-200" : "bg-purple-100 dark:bg-purple-600 text-white";
@@ -172,9 +176,29 @@
                 </div>`;
                 });
 
+                // 🔊 Joue le son si un nouveau message a été reçu de l'admin
+                if (data.length > lastCount && lastCount !== 0) {
+                    const lastMsg = data[data.length - 1];
+                    if (lastMsg.sender === "admin") {
+                        document.getElementById("client-sound").play().catch(() => { });
+                    }
+                }
 
+                lastCount = data.length;
                 messagesDiv.scrollTop = messagesDiv.scrollHeight;
             }, 3000);
         }
+
+        // Débloque le son dès que l'utilisateur interagit (obligatoire sur Chrome/Safari)
+        document.addEventListener("click", function enableAudioOnce() {
+            const sound = document.getElementById("client-sound");
+            if (sound) {
+                sound.play().catch(() => { }); // Play + ignore si blocage
+                sound.pause();                // On arrête direct
+                sound.currentTime = 0;
+                document.removeEventListener("click", enableAudioOnce);
+            }
+        });
+
     });
 </script>

@@ -47,6 +47,9 @@ $content = json_decode(file_get_contents($jsonFile), true);
   <!-- CSS principal -->
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css" media="all">
+  
+  <!-- Ajoute ce player audio dans ton HTML -->
+  <audio id="client-sound" src="./sounds/client_notification.mp3" preload="auto"></audio>
 
   <script>
     // Empêche le flash blanc en appliquant le thème au plus tôt

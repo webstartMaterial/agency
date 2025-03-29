@@ -4,10 +4,8 @@ CREATE TABLE `conversations` (
   `email` VARCHAR(255) NOT NULL,
   `name` VARCHAR(255) DEFAULT NULL,
   `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
-  `token` VARCHAR(64) DEFAULT NULL;
-  `updated_at` DATETIME
-  `status` ENUM('active', 'archived') DEFAULT 'active';
-
+  `updated_at` DATETIME,
+  `status` ENUM('active', 'archived') DEFAULT 'active'
 );
 
 -- Table des messages associés à une conversation
