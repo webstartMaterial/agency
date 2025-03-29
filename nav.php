@@ -36,7 +36,7 @@
       <!-- Sélecteur de langue -->
       <div class="relative" x-data="{ open: false }">
             <?php $flags = ['fr' => '🇫🇷', 'en' => '🇬🇧', 'es' => '🇪🇸', 'ar' => '🇸🇦'];?>
-        <button @click="open = !open" class="flex items-center bg-white border border-gray-300 text-gray-700 py-1 px-3 rounded focus:outline-none">
+        <button @click="open = !open" class="flex items-center border border-gray-300 text-white py-1 px-3 rounded focus:outline-none">
           <span class="mr-2"><?= $flags[$lang] ?? '🌐' ?></span>
           <?= $content['header']['languages'][$lang] ?>
           <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

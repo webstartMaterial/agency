@@ -1,7 +1,6 @@
   <?php require_once("./haut_site.php"); ?>
 
   <?php require_once("./nav.php"); ?>
-  <?php require_once("./chat_widget.php"); ?>
   <?php require_once("./header.php"); ?>
   <?php require_once("./banner_header.php"); ?>
   <?php require_once("./presentation.php"); ?>

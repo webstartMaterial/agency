@@ -29,10 +29,10 @@
               <?= htmlspecialchars($pack['name']) ?>
             </h2>
 
-            <h1
+            <h3
               class="text-5xl text-gray-900 dark:text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-200 dark:border-gray-700">
               <span><?= htmlspecialchars($pack['price']) ?></span>
-            </h1>
+            </h3>
 
             <?php foreach ($pack['features'] as $feature): ?>
               <p class="flex items-center text-gray-600 dark:text-gray-300 mb-2">

@@ -1,2 +1,4 @@
 .env.local.php
 connexion.php
+.htaccess
+.htaccess.bak

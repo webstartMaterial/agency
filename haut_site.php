@@ -44,6 +44,9 @@ $content = json_decode(file_get_contents($jsonFile), true);
   <link rel="preload" href="./themify-icons/css/themify-icons.css" as="style">
   <link rel="stylesheet" href="./themify-icons/css/themify-icons.css" media="all">
 
+  <!-- Encore d'autres icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
   <!-- CSS principal -->
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css" media="all">
@@ -76,3 +79,5 @@ $content = json_decode(file_get_contents($jsonFile), true);
 </head>
 
 <body class="overflow-x-hidden max-w-full dark:bg-gray-900"></body>
+
+<?php require_once("./chat_widget.php"); ?>

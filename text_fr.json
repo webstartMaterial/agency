@@ -16,23 +16,23 @@
         "nav": [
             {
                 "label": "Pourquoi nous ?",
-                "href": "/#why"
+                "href": "?/#why"
             },
             {
                 "label": "Nos offres",
-                "href": "/#offers"
+                "href": "?/#offers"
             },
             {
                 "label": "Notre équipe",
-                "href": "/#team"
+                "href": "?/#team"
             },
             {
                 "label": "Réalisations",
-                "href": "/#portfolio"
+                "href": "?/#portfolio"
             },
             {
                 "label": "Nous contacter",
-                "href": "/#contact"
+                "href": "?/#contact"
             }
         ],
         "languages": {
@@ -370,30 +370,66 @@
     "footer": {
         "columns": [
             {
-                "title": "Services",
+                "title": "Nos packs",
                 "links": [
-                    "Sites web",
-                    "Applications mobiles",
-                    "Marketing digital",
-                    "Design UI/UX"
+                    {
+                        "label": "Pack Vitrine Express",
+                        "url": "?/#pricing"
+                    },
+                    {
+                        "label": "Pack E-Commerce",
+                        "url": "?/#pricing"
+                    },
+                    {
+                        "label": "Pack Marketing & Automatisation",
+                        "url": "?/#pricing"
+                    },
+                    {
+                        "label": "Pack IA & Sur-Mesure",
+                        "url": "?/#pricing"
+                    }
                 ]
             },
             {
                 "title": "Expertises",
                 "links": [
-                    "Intelligence artificielle",
-                    "Automatisation",
-                    "Référencement SEO",
-                    "Photographie"
+                    {
+                        "label": "La création de site web",
+                        "url": "?/#offers"
+                    },
+                    {
+                        "label": "Le référencement sur internet",
+                        "url": "?/#offers"
+                    },
+                    {
+                        "label": "Automatisation marketing",
+                        "url": "?/#offers"
+                    },
+                    {
+                        "label": "L'intelligence artificielle",
+                        "url": "?/#offers"
+                    }
                 ]
             },
             {
                 "title": "À propos",
                 "links": [
-                    "L'équipe",
-                    "Notre vision",
-                    "Mentions légales",
-                    "Contact"
+                    {
+                        "label": "Politique de confidentialités",
+                        "url": "confidential.php"
+                    },
+                    {
+                        "label": "Mention légales",
+                        "url": "legal_mentions.php"
+                    },
+                    {
+                        "label": "Politique de cookies",
+                        "url": "cookies_mentions.php"
+                    },
+                    {
+                        "label": "CGU",
+                        "url": "cgu.php"
+                    }
                 ]
             }
         ],
@@ -403,15 +439,22 @@
             "message": "Inscrivez-vous à notre newsletter pour ne rien manquer de nos nouveautés."
         },
         "bottom": {
-            "brand": "Mon Agene Web",
-            "copyright": "© 2025 Mon Agene Web",
-            "twitter": "@ademiews",
+            "brand": "Mon Agence Web",
+            "copyright": "© 2025 Mon Agence Web",
+            "twitter": "@MonAgenceWeb",
             "socials": {
                 "facebook": "https://facebook.com/ademiews",
                 "twitter": "https://twitter.com/ademiews",
                 "instagram": "https://instagram.com/ademiews",
                 "linkedin": "https://linkedin.com/company/ademiews"
             }
+        },
+        "contact": {
+            "title": "Nous contacter",
+            "email_label": "Email",
+            "email_value": "mail@mail.com",
+            "phone_label": "Téléphone",
+            "phone_value": "07 82 14 81 41"
         }
     },
     "portfolio": {
