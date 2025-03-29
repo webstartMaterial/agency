@@ -1,0 +1,1 @@
+putenv('APP_ENV=local');

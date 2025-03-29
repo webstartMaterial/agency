@@ -8,6 +8,7 @@ if ($env === 'prod') {
     $host = 'okbqknlagency.mysql.db';
     $dbname = 'okbqknlagency';
     $username = 'okbqknlagency';
+    $port = 3306;
     $password = 'Zizou2024';
 } else {
     $host = 'localhost';
@@ -17,7 +18,7 @@ if ($env === 'prod') {
 }
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+    $pdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("Erreur de connexion : " . $e->getMessage());
