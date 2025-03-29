@@ -147,6 +147,36 @@
         07 82 14 81 41
       </a>
 
+      <!-- Dark Mode Toggle -->
+      <div class="flex items-center justify-between">
+        <span>🌙 Mode sombre</span>
+        <button @click="
+          darkMode = !darkMode;
+          if(darkMode) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+          }
+        "
+          class="w-10 h-10 rounded-full flex items-center justify-center bg-white text-yellow-500 hover:bg-gray-200 transition">
+          <template x-if="!darkMode">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v1m0 16v1m8.66-13.66l-.707.707M4.34 19.66l-.707.707M21 12h-1M4 12H3m16.66 4.66l-.707-.707M4.34 4.34l-.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z" />
+            </svg>
+          </template>
+          <template x-if="darkMode">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-400" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+            </svg>
+          </template>
+        </button>
+      </div>
+
     </div>
   </div>
 
