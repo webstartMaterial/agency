@@ -28,7 +28,12 @@ foreach ($conversations as $conv): ?>
                     <span class="ml-2 text-xs bg-red-600 text-white px-2 py-0.5 rounded-full">New</span>
                 <?php endif; ?>
             </div>
-            <div class="text-sm text-gray-300"><?= htmlspecialchars($conv['email']) ?></div>
+            <div class="text-sm text-gray-300">
+                ✉️ <?= htmlspecialchars($conv['email'] ?? '—') ?>
+            </div>
+            <div class="text-sm text-gray-300">
+                📞 <?= htmlspecialchars($conv['phone'] ?? '—') ?>
+            </div>
             <small class="text-gray-400 text-xs">Créée le <?= date('d/m/Y H:i', strtotime($conv['created_at'])) ?></small>
         </a>
         <form action="chat/archive.php" method="POST" class="text-right mb-2 px-4">

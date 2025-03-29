@@ -27,6 +27,10 @@
                 placeholder="<?= htmlspecialchars($content['chat']['placeholder_email']) ?>"
                 class="px-3 py-2 rounded border bg-gray-100 dark:bg-gray-700 text-sm placeholder-white text-white dark:placeholder-white">
 
+            <input id="chat-phone" type="text"
+                placeholder="<?= htmlspecialchars($content['chat']['placeholder_phone']) ?>"
+                class="px-3 py-2 rounded border bg-gray-100 dark:bg-gray-700 text-sm placeholder-white text-white dark:placeholder-white">
+
             <button id="start-chat" class="bg-purple-500 hover:bg-purple-600 text-white text-sm py-2 px-4 rounded">
                 <?= htmlspecialchars($content['chat']['start_button']) ?>
             </button>
@@ -69,13 +73,14 @@
 
         const savedName = localStorage.getItem("chat_name");
         const savedEmail = localStorage.getItem("chat_email");
+        const savedPhone = localStorage.getItem("chat_phone");
         const savedConvId = localStorage.getItem("conversation_id");
         const startedAt = localStorage.getItem("chat_started_at");
         const now = Date.now();
         const duration = 24 * 60 * 60 * 1000;
 
         // 👉 Si session existante et toujours valide, on restaure automatiquement
-        if (savedName && savedEmail && savedConvId && startedAt && (now - startedAt < duration)) {
+        if (savedName && savedEmail && savedPhone && savedConvId && startedAt && (now - startedAt < duration)) {
             sessionStorage.setItem("conversation_id", savedConvId);
             chatStart.classList.add("hidden");
             chatMessages.classList.remove("hidden");
@@ -97,16 +102,35 @@
         document.getElementById("start-chat").addEventListener("click", function () {
             const name = document.getElementById("chat-name").value.trim();
             const email = document.getElementById("chat-email").value.trim();
+            const phone = document.getElementById("chat-phone").value.trim();
 
-            if (!name || !email) {
-                alert("Merci de renseigner votre nom et votre email.");
+            if (!name || !email || !phone) {
+                alert("Merci de renseigner votre nom, votre email et votre numéro de téléphone.");
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phoneRegex = /^0[1-9][0-9]{8}$/;
+
+            if (!name) {
+                alert("Merci de renseigner votre prénom.");
+                return;
+            }
+
+            if (!emailRegex.test(email)) {
+                alert("Merci de saisir un email valide.");
+                return;
+            }
+
+            if (!phoneRegex.test(phone)) {
+                alert("Merci d’entrer un numéro de téléphone français valide à 10 chiffres (ex: 0782157181).");
                 return;
             }
 
             fetch("chat/init.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ name, email })
+                body: JSON.stringify({ name, email, phone })
             })
                 .then(res => res.json())
                 .then(data => {
@@ -114,6 +138,7 @@
                         sessionStorage.setItem("conversation_id", data.conversation_id);
                         localStorage.setItem("chat_name", name);
                         localStorage.setItem("chat_email", email);
+                        localStorage.setItem("chat_phone", phone);
                         localStorage.setItem("conversation_id", data.conversation_id);
                         localStorage.setItem("chat_started_at", Date.now());
 
@@ -133,7 +158,21 @@
             if (!message) return;
 
             const messagesDiv = chatMessages;
-            messagesDiv.innerHTML += `<div class="mb-2 text-right"><span class="bg-purple-100 dark:bg-purple-600 px-2 py-1 rounded">${message}</span></div>`;
+
+            // Génère la date et l'heure actuelles
+            const now = new Date();
+            const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            const fullDate = now.toLocaleDateString();
+            const align = "text-right";
+            const bg = "bg-purple-100 dark:bg-purple-600 text-white";
+            messagesDiv.innerHTML += `
+            <div class="mb-2 ${align}">
+                <div class="text-xs text-gray-400 mb-1 font-semibold">
+                    Vous -                 <span class="${bg} px-2 py-1 rounded inline-block">${message}</span><br>
+
+                </div>
+                <small class="text-xs text-gray-400">${time} - ${fullDate}</small>
+            </div>`;
             chatInput.value = "";
 
             const formData = new FormData();
@@ -141,6 +180,7 @@
             formData.append("conversation_id", sessionStorage.getItem("conversation_id"));
             formData.append("email", localStorage.getItem("chat_email"));
             formData.append("name", localStorage.getItem("chat_name"));
+            formData.append("phone", localStorage.getItem("chat_phone"));
 
             await fetch("chat/send.php", { method: "POST", body: formData });
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
@@ -163,17 +203,21 @@
 
                 data.forEach(msg => {
                     const align = msg.sender === "admin" ? "text-left" : "text-right";
-                    const bg = msg.sender === "admin" ? "bg-gray-200" : "bg-purple-100 dark:bg-purple-600 text-white";
+                    const bg = msg.sender === "admin" ? "bg-green-100 dark:bg-green-600 text-white" : "bg-purple-100 dark:bg-purple-600 text-white";
 
                     const date = new Date(msg.created_at);
                     const time = `${date.getHours().toString().padStart(2, "0")}:${date.getMinutes().toString().padStart(2, "0")}`;
                     const fullDate = `${date.getDate().toString().padStart(2, "0")}/${(date.getMonth() + 1).toString().padStart(2, "0")}/${date.getFullYear()}`;
 
                     messagesDiv.innerHTML += `
-                <div class="mb-2 ${align}">
-                    <span class="${bg} px-2 py-1 rounded inline-block">${msg.message}</span><br>
-                    <small class="text-xs text-gray-400">${time} - ${fullDate}</small>
-                </div>`;
+                    <div class="mb-2 ${align}">
+                        <div class="text-xs text-gray-400 mb-1 font-semibold">
+                            ${msg.sender === "admin" ? "Votre conseiller Sam" : "Vous"} -
+                                                    <span class="${bg} px-2 py-1 rounded inline-block">${msg.message}</span><br>
+
+                        </div>
+                        <small class="text-xs text-gray-400">${time} - ${fullDate}</small>
+                    </div>`;
                 });
 
                 // 🔊 Joue le son si un nouveau message a été reçu de l'admin

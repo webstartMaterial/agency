@@ -5,10 +5,11 @@ require_once '../connexion.php';
 $data = json_decode(file_get_contents('php://input'), true);
 $name = trim($data['name'] ?? '');
 $email = trim($data['email'] ?? '');
+$phone = trim($data['phone'] ?? '');
 
-if (!$email || !$name) {
+if (!$email || !$name || !$phone) {
     http_response_code(400);
-    echo json_encode(['error' => 'Nom et email requis']);
+    echo json_encode(['error' => 'Nom, email et téléphone requis']);
     exit;
 }
 
@@ -24,8 +25,8 @@ if ($conversation) {
 
 } else {
     // Crée une nouvelle conversation
-    $stmt = $pdo->prepare("INSERT INTO conversations (name, email, created_at) VALUES (?, ?, NOW())");
-    $stmt->execute([$name, $email]);
+    $stmt = $pdo->prepare("INSERT INTO conversations (name, email, phone, created_at) VALUES (?, ?, ?, NOW())");
+    $stmt->execute([$name, $email, $phone]);
     $conversationId = $pdo->lastInsertId();
 }
 
