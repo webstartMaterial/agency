@@ -74,7 +74,7 @@ $content = json_decode(file_get_contents($jsonFile), true);
   </script>
   <!-- head -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/alpinejs" defer></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
 
 </head>
 
