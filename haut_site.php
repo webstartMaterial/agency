@@ -45,7 +45,7 @@ $content = json_decode(file_get_contents($jsonFile), true);
   <link rel="stylesheet" href="./themify-icons/css/themify-icons.css" media="all">
 
   <!-- Encore d'autres icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@0.485.0/dist/umd/lucide.min.js"></script>
 
   <!-- CSS principal -->
   <link rel="preload" href="css/style.css" as="style">
