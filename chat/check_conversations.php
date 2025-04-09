@@ -20,12 +20,12 @@ foreach ($conversations as $conv): ?>
     <li>
         <a href="?id=<?= $conv['id'] ?>" class="block px-4 py-2 
          <?= $selectedId == $conv['id']
-             ? 'bg-purple-600'
-             : ($conv['unread'] > 0 ? 'bg-purple-800' : 'hover:bg-purple-700') ?>">
-            <div class="font-semibold text-white">
+             ? $bgPrimary
+             : ($conv['unread'] > 0 ? 'bg-purple-800' : "hover:$bgPrimary") ?>">
+            <div class="font-semibold dark:<?= $textTitle; ?>">
                 <?= htmlspecialchars($conv['name'] ?? 'Utilisateur inconnu') ?>
                 <?php if ($conv['unread'] > 0 && $selectedId != $conv['id']): ?>
-                    <span class="ml-2 text-xs bg-red-600 text-white px-2 py-0.5 rounded-full">New</span>
+                    <span class="ml-2 text-xs bg-red-600 dark:<?= $textTitle; ?> px-2 py-0.5 rounded-full">New</span>
                 <?php endif; ?>
             </div>
             <div class="text-sm text-gray-300">
@@ -34,11 +34,11 @@ foreach ($conversations as $conv): ?>
             <div class="text-sm text-gray-300">
                 📞 <?= htmlspecialchars($conv['phone'] ?? '—') ?>
             </div>
-            <small class="text-gray-400 text-xs">Créée le <?= date('d/m/Y H:i', strtotime($conv['created_at'])) ?></small>
+            <small class="<?= $textParagraph; ?> text-xs">Créée le <?= date('d/m/Y H:i', strtotime($conv['created_at'])) ?></small>
         </a>
         <form action="chat/archive.php" method="POST" class="text-right mb-2 px-4">
             <input type="hidden" name="conversation_id" value="<?= $conv['id'] ?>">
-            <button type="submit" class="text-xs bg-gray-700 hover:bg-red-600 text-white px-3 py-1 rounded">
+            <button type="submit" class="text-xs <?= $bgQuartenary; ?> hover:bg-red-600 dark:<?= $textTitle; ?> px-3 py-1 rounded">
                 Archiver la conversation
             </button>
         </form>

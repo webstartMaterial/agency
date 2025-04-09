@@ -1,4 +1,4 @@
-<header class="fixed top-0 left-0 w-full z-50 bg-purple-600 shadow text-white body-font"
+<header class="fixed top-0 left-0 w-full z-50 <?= $bgPrimary;?> shadow text-white body-font"
   x-data="{ openMenu: false, darkMode: false }" x-init="
   darkMode = localStorage.getItem('theme') === 'dark';
   if(darkMode) document.documentElement.classList.add('dark');
@@ -8,7 +8,7 @@
     <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="index.php">
       <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-           class="w-10 h-10 text-white p-2 bg-purple-600 rounded-full" viewBox="0 0 24 24">
+           class="w-10 h-10 text-white p-2 <?= $bgPrimary;?> rounded-full" viewBox="0 0 24 24">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
       </svg>-->
       <img style="width:100px" src="./imgs/logo.webp" alt="Click & Visible">
@@ -25,7 +25,7 @@
     <!-- Menu Desktop -->
     <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
       <?php foreach ($content['header']['nav'] as $link): ?>
-        <a href="<?= htmlspecialchars($link['href']) ?>" class="text-white mr-5 hover:text-gray-200">
+        <a href="<?= htmlspecialchars($link['href']) ?>" class="text-white mr-5 hover:<?= $textPrimaryHover; ?>">
           <?= htmlspecialchars($link['label']) ?>
         </a>
       <?php endforeach; ?>
@@ -51,7 +51,7 @@
             <?php foreach ($content['header']['languages'] as $code => $label): ?>
               <li>
                 <button type="submit" name="lang" value="<?= $code ?>"
-                  class="w-full text-left px-4 py-2 hover:bg-purple-100 flex items-center gap-2 <?= $code === $lang ? 'font-semibold text-purple-600' : 'text-gray-700' ?>">
+                  class="w-full text-left px-4 py-2 hover:bg-purple-100 flex items-center gap-2 <?= $code === $lang ? 'font-semibold <?= $textPrimary; ?>' : 'text-gray-700' ?>">
                   <span><?= $flags[$code] ?? '🌐' ?></span>
                   <span><?= $label ?></span>
                 </button>
@@ -63,7 +63,7 @@
 
       <!-- Bouton téléphone -->
       <a href="tel:0782148141"
-        class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-full flex items-center gap-2 transition duration-200 shadow">
+        class="<?= $bgTernary; ?> <?= $bgTernaryHover; ?> text-white text-sm font-semibold px-4 py-2 rounded-full flex items-center gap-2 transition duration-200 shadow">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
           stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -91,7 +91,7 @@
           </svg>
         </template>
         <template x-if="darkMode">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-400" fill="currentColor"
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 <?= $textPrimary;?>" fill="currentColor"
             viewBox="0 0 20 20">
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
           </svg>
@@ -102,12 +102,12 @@
 
   <!-- Menu Mobile -->
   <!-- Menu Mobile -->
-  <div x-show="openMenu" class="md:hidden bg-purple-600 text-white">
+  <div x-show="openMenu" class="md:hidden <?= $bgPrimary;?> text-white">
     <div class="p-4 space-y-4 flex flex-col items-center text-center">
 
       <!-- Liens de navigation -->
       <?php foreach ($content['header']['nav'] as $link): ?>
-        <a href="<?= htmlspecialchars($link['href']) ?>" class="block hover:text-gray-200">
+        <a href="<?= htmlspecialchars($link['href']) ?>" class="block hover:<?= $textPrimaryHover; ?>">
           <?= htmlspecialchars($link['label']) ?>
         </a>
       <?php endforeach; ?>
@@ -126,7 +126,7 @@
             <?php foreach ($content['header']['languages'] as $code => $label): ?>
               <li>
                 <button type="submit" name="lang" value="<?= $code ?>"
-                  class="w-full text-left px-4 py-2 hover:bg-purple-100 flex items-center gap-2 <?= $code === $lang ? 'font-semibold text-purple-600' : 'text-gray-700' ?>">
+                  class="w-full text-left px-4 py-2 hover:bg-purple-100 flex items-center gap-2 <?= $code === $lang ? 'font-semibold <?= $textPrimary; ?>' : 'text-gray-700' ?>">
                   <span><?= $flags[$code] ?></span>
                   <span><?= $label ?></span>
                 </button>
@@ -138,7 +138,7 @@
 
       <!-- Bouton téléphone -->
       <a href="tel:0782148141"
-        class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-full inline-flex items-center gap-2 transition duration-200 shadow">
+        class="<?= $bgTernary; ?> <?= $bgTernaryHover; ?> text-white text-sm font-semibold px-4 py-2 rounded-full inline-flex items-center gap-2 transition duration-200 shadow">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
           stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -169,7 +169,7 @@
             </svg>
           </template>
           <template x-if="darkMode">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-400" fill="currentColor"
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 <?= $textPrimary;?>" fill="currentColor"
               viewBox="0 0 20 20">
               <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
             </svg>

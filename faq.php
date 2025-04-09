@@ -1,17 +1,17 @@
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-white dark:<?= $bgSecondary; ?>">
 
   <div class="container px-5 py-24 mx-auto">
 
     <div class="text-center mb-20">
       <h2
-        class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-4">
+        class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font <?= $textTitleLightMode;?> dark:<?= $textTitle;?> mb-4">
         <?= htmlspecialchars($content['faq']['title']) ?>
       </h2>
-      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 dark:text-gray-400">
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto <?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?>">
         <?= htmlspecialchars($content['faq']['description']) ?>
       </p>
       <div class="flex mt-6 justify-center">
-        <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+        <div class="w-16 h-1 rounded-full <?= $bgPrimary;?> inline-flex"></div>
       </div>
     </div>
 
@@ -20,7 +20,7 @@
                 <?php foreach ($content['faq']['items'] as $index => $item): ?>
                     <div class="border-b border-gray-200 dark:border-gray-700">
                         <button type="button"
-                            class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-900 dark:text-white focus:outline-none"
+                            class="w-full flex justify-between items-center py-4 text-left font-bold <?= $textTitleLightMode;?> dark:<?= $textTitle;?> focus:outline-none"
                             onclick="toggleFAQ(<?= $index ?>)">
                             <?= htmlspecialchars($item['question']) ?>
                             <svg class="w-5 h-5 transition-transform duration-300 <?= $index === 0 ? 'rotate-180' : '' ?>"
@@ -30,9 +30,9 @@
                             </svg>
                         </button>
                         <div id="answer-<?= $index ?>"
-                            class="<?= $index === 0 ? '' : 'hidden' ?> pb-4 text-gray-500 dark:text-gray-400">
+                            class="<?= $index === 0 ? '' : 'hidden' ?> pb-4 <?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?>">
                             <?php foreach ($item['answer'] as $p): ?>
-                                <p class="mb-2"><?= htmlspecialchars($p) ?></p>
+                                <p class="mb-2 <?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?>"><?= htmlspecialchars($p) ?></p>
                             <?php endforeach; ?>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-<section class="text-gray-600 dark:text-gray-300 body-font bg-purple-500 dark:bg-purple-700" data-aos="fade-up">
+<section class="<?= $textParagraphLightMode; ?> dark:text-gray-300 body-font <?= $bgPrimary;?> dark:<?= $bgPrimary; ?>" data-aos="fade-up">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap justify-center -m-4 text-left">
       <?php
@@ -11,7 +11,7 @@
             <!-- Icône à gauche -->
             <div class="flex-shrink-0">
               <div class="w-20 h-20 rounded-full bg-white bg-opacity-20 dark:bg-white/30 flex items-center justify-center">
-                <i class="<?= $icons[$index % count($icons)] ?> text-white text-5xl"></i>
+                <i class="<?= $icons[$index % count($icons)] ?> <?= $textWhiteLightMode ?> dark:<?= $textTitle; ?> text-5xl"></i>
               </div>
             </div>
 
@@ -20,10 +20,10 @@
 
             <!-- Texte à droite -->
             <div class="flex-grow">
-              <h2 class="title-font font-bold text-3xl text-white mb-1">
+              <h2 class="title-font font-bold text-3xl <?= $textWhiteLightMode ?> dark:<?= $textTitle; ?> mb-1">
                 <?= htmlspecialchars($item['number']) ?>
               </h2>
-              <p class="leading-relaxed text-white text-base">
+              <p class="leading-relaxed <?= $textWhiteLightMode ?> dark:<?= $textTitle; ?> text-base">
                 <?= htmlspecialchars($item['label']) ?>
               </p>
             </div>

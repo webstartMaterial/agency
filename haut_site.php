@@ -79,6 +79,9 @@ $content = json_decode(file_get_contents($jsonFile), true);
 
 </head>
 
-<body class="overflow-x-hidden max-w-full dark:bg-gray-900"></body>
-
+<?php require_once("./variables.php"); ?>
 <?php require_once("./chat_widget.php"); ?>
+
+<body class="overflow-x-hidden max-w-full dark:<?= $bgSecondary; ?>"></body>
+
+
