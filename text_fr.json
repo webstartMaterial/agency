@@ -1,37 +1,37 @@
 {
     "head": {
-        "title": "Création de sites performants & modernes",
-        "description": "Agence web spécialisée dans la création de sites vitrines, e-commerce et solutions sur-mesure avec design soigné et performance optimale.",
+        "title": "Click & Visible | Création de sites web et marketing digital pour entrepreneurs",
+        "description": "Click & Visible est l'agence web 100% en ligne dédiée aux petites entreprises et auto-entrepreneurs : création de site vitrine, site e-commerce, marketing digital (réseaux sociaux, emailing) et automatisation des tâches avec l’IA.",
         "author": "Samih Habbani",
         "theme_color": "#4c1d95"
     },
     "header": {
-        "title_line1": "Création de sites web modernes",
-        "title_line2": "Pour entrepreneurs et petites entreprises",
-        "paragraph": "Notre agence web en ligne conçoit des sites professionnels, rapides, responsives et optimisés pour le SEO. Idéal pour lancer votre activité, présenter vos services ou vendre vos produits en ligne.",
-        "button1": "Voir nos offres",
-        "button2": "Demander un devis",
+        "title_line1": "Créez un <span class='CLASS_PHOTOBOOTH'>site web pro</span> & une <span class='CLASS_PHOTOBOOTH'>présence en ligne</span>",
+        "title_line2": "<span class='CLASS_PHOTOBOOTH'>avec notre agence</span>, simple & efficace.",
+        "paragraph": "Click & Visible accompagne les petites entreprises et indépendants dans leur présence en ligne : création de site vitrine ou e-commerce, marketing digital, et automatisation de tâches grâce à l’IA.",
+        "button1": "Découvrir nos services",
+        "button2": "Obtenir un devis gratuit",
         "image": "./imgs/header.webp",
         "brand": "Click & Visible",
         "nav": [
             {
-                "label": "Pourquoi nous ?",
+                "label": "Pourquoi nous choisir ?",
                 "href": "?/#why"
             },
             {
-                "label": "Nos offres",
+                "label": "Nos services",
                 "href": "?/#offers"
             },
             {
-                "label": "Notre équipe",
-                "href": "?/#team"
-            },
-            {
-                "label": "Réalisations",
+                "label": "Exemples de projets",
                 "href": "?/#portfolio"
             },
             {
-                "label": "Nous contacter",
+                "label": "FAQ",
+                "href": "?/#faq"
+            },
+            {
+                "label": "Contact",
                 "href": "?/#contact"
             }
         ],
@@ -40,426 +40,245 @@
             "en": "English",
             "es": "Español",
             "ar": "العربية"
-        }
+        },
+        "cities": [
+            "Paris",
+            "Nice"
+        ]
     },
-    "services": {
-        "title": "Des solutions digitales pour votre succès",
-        "description": "Nous aidons les indépendants et petites entreprises à créer une présence en ligne forte et professionnelle.",
-        "items": [
+    "banner_services": [
+        {
+            "icon": "ti-world",
+            "title": "Site vitrine clé en main",
+            "description": "Un site professionnel, moderne et responsive pour présenter votre activité et attirer vos futurs clients."
+        },
+        {
+            "icon": "ti-shopping-cart",
+            "title": "Boutique e-commerce",
+            "description": "Vendez vos produits en ligne avec une boutique simple, efficace et connectée aux meilleurs outils."
+        },
+        {
+            "icon": "ti-bar-chart",
+            "title": "Marketing digital",
+            "description": "Posts réseaux sociaux, newsletters, campagnes email… on vous aide à gagner en visibilité facilement."
+        },
+        {
+            "icon": "ti-settings",
+            "title": "Automatisation IA",
+            "description": "On analyse vos tâches répétitives pour les automatiser grâce à l’intelligence artificielle. Gain de temps assuré."
+        }
+    ],
+    "presentation": {
+        "title": "Pourquoi choisir Click & Visible ?",
+        "description": "Parce qu’un site web bien pensé peut transformer votre activité, notre mission est de rendre le digital simple, accessible et performant pour tous.",
+        "intro": {
+            "image": "./imgs/services/header.webp",
+            "name": "Samih Habbani",
+            "role": "Fondateur de Click & Visible",
+            "bio": "J’ai créé Click & Visible pour accompagner les entrepreneurs dans leur présence en ligne. Pas de jargon technique, juste des solutions concrètes et efficaces.",
+            "description": "Notre agence 100% en ligne vous propose des services clairs, adaptés aux petits budgets, et pensés pour vous faire gagner du temps tout en développant votre visibilité."
+        },
+        "highlights": [
             {
-                "title": "Création de sites web",
-                "description": "Sites vitrines modernes, responsives et optimisés SEO pour présenter vos services.",
-                "link_label": "En savoir plus",
-                "img": "./imgs/service1.webp"
+                "image": "./imgs/services/reason-1.webp",
+                "subtitle": "Expertise web",
+                "title": "Sites modernes & efficaces",
+                "description": "Des sites vitrines et e-commerce conçus pour attirer vos clients, rapides à charger, beaux, et pensés pour les conversions."
             },
             {
-                "title": "Développement mobile",
-                "description": "Applications Android/iOS sur mesure pour étendre votre activité sur mobile.",
-                "link_label": "En savoir plus",
-                "img": "./imgs/service2.webp"
+                "image": "./imgs/services/reason-2.webp",
+                "subtitle": "Gain de temps",
+                "title": "Clé en main & rapide",
+                "description": "Contenu, design, SEO de base, support : on gère tout pour vous, sans stress ni perte de temps. Vous restez concentré sur l’essentiel."
             },
             {
-                "title": "Marketing digital",
-                "description": "Publicité en ligne, réseaux sociaux et email marketing pour booster votre visibilité.",
-                "link_label": "En savoir plus",
-                "img": "./imgs/service3.webp"
+                "image": "./imgs/services/reason-3.webp",
+                "subtitle": "Communication",
+                "title": "Marketing digital simplifié",
+                "description": "Réseaux sociaux, emailings, visuels : on crée et planifie pour vous. Et si besoin, on vous automatise tout ça simplement."
+            },
+            {
+                "image": "./imgs/services/reason-4.webp",
+                "subtitle": "Automatisation IA",
+                "title": "Moins de tâches répétitives",
+                "description": "Grâce à l’IA, on repère et automatise vos actions chronophages. Gagnez en efficacité dès maintenant, sans complexité."
             }
-        ],
-        "button": "Voir toutes nos offres"
+        ]
     },
     "stats": {
         "items": [
             {
-                "number": "350+",
-                "label": "Clients satisfaits"
-            },
-            {
-                "number": "120",
-                "label": "Sites web livrés"
-            },
-            {
-                "number": "25",
-                "label": "Applications mobiles"
-            },
-            {
-                "number": "15",
-                "label": "Campagnes marketing actives"
-            }
-        ]
-    },
-    "skills": {
-        "title": "Notre expertise à votre service",
-        "description": "Notre agence réunit des compétences variées et complémentaires pour répondre à tous vos besoins numériques, de la conception visuelle à la performance marketing.",
-        "items": [
-            {
-                "title": "Création de sites web & apps",
-                "description": "Sites vitrines, e-commerce ou applications web sur mesure, responsives, performants et administrables facilement.",
+                "number": "120+",
+                "label": "Sites livrés (vitrine & e-commerce)",
                 "icon": "ti-layout"
             },
             {
-                "title": "Développement mobile",
-                "description": "Applications mobiles Android et iOS pour étendre votre présence et améliorer l'expérience utilisateur.",
-                "icon": "ti-mobile"
+                "number": "300+",
+                "label": "Campagnes marketing lancées",
+                "icon": "ti-bar-chart"
             },
             {
-                "title": "Communication & marketing digital",
-                "description": "Stratégies de communication ciblées sur les réseaux sociaux, campagnes Ads, newsletters et plus encore.",
-                "icon": "ti-announcement"
+                "number": "95%",
+                "label": "Clients satisfaits & fidèles",
+                "icon": "ti-thumb-up"
             },
             {
-                "title": "IA & marketing automation",
-                "description": "Outils d'automatisation intelligents pour générer des leads, personnaliser l'expérience et gagner du temps.",
-                "icon": "ti-settings"
-            },
-            {
-                "title": "Process & automatisation métier",
-                "description": "Création de systèmes ou mini-outils personnalisés pour fluidifier vos opérations internes selon vos demandes spécifiques.",
-                "icon": "ti-loop"
-            },
-            {
-                "title": "SEO & visibilité",
-                "description": "Optimisation de votre positionnement sur les moteurs de recherche et amélioration de votre visibilité locale et nationale.",
-                "icon": "ti-stats-up"
-            },
-            {
-                "title": "Photographie & image de marque",
-                "description": "Shooting photo, retouche, banques d’images, mise en valeur de vos produits ou de votre activité.",
-                "icon": "ti-camera"
-            },
-            {
-                "title": "Webdesign & génération de logos",
-                "description": "Création d’univers graphiques uniques, templates élégants et logos professionnels en quelques heures.",
-                "icon": "ti-brush"
+                "number": "5★",
+                "label": "Avis Google & Trustpilot",
+                "icon": "ti-star"
             }
-        ],
-        "button": "Discutons de votre projet"
+        ]
+    },
+    "offer_details": {
+        "title": "Des services web pensés pour les entrepreneurs",
+        "description": "Que vous débutiez ou que vous souhaitiez passer à la vitesse supérieure, nous vous proposons des solutions simples, efficaces et accessibles pour booster votre présence en ligne.",
+        "items": [
+            {
+                "title": "Création de site vitrine",
+                "description": "Un site web professionnel qui présente votre activité, vos services et vos coordonnées. Parfait pour vous rendre visible en ligne et rassurer vos futurs clients.",
+                "features": [
+                    "Design moderne et adapté à votre image",
+                    "Site responsive (ordinateur, tablette, mobile)",
+                    "Pages : accueil, services, contact, à propos, etc.",
+                    "Référencement naturel de base (SEO)"
+                ],
+                "images": [
+                    "./imgs/services/pack-1_1.webp",
+                    "./imgs/services/pack-1_2.webp",
+                    "./imgs/services/pack-1_3.webp",
+                    "./imgs/services/pack-1_4.webp"
+                ],
+                "discover_offer": "Je veux un site vitrine"
+            },
+            {
+                "title": "Création de boutique e-commerce",
+                "description": "Une boutique en ligne simple et fonctionnelle pour vendre vos produits 24h/24. Idéal pour artisans, commerçants ou créateurs indépendants.",
+                "features": [
+                    "Catalogue produits + fiches détaillées",
+                    "Paiement sécurisé et gestion des commandes",
+                    "Design personnalisé et responsive",
+                    "Connexion à vos outils (email, analytics, livraison...)"
+                ],
+                "images": [
+                    "./imgs/services/pack-2_1.webp",
+                    "./imgs/services/pack-2_2.webp",
+                    "./imgs/services/pack-2_3.webp",
+                    "./imgs/services/pack-2_4.webp"
+                ],
+                "discover_offer": "Je lance ma boutique"
+            },
+            {
+                "title": "Marketing digital & visibilité",
+                "description": "Nous vous aidons à communiquer efficacement sur le web : réseaux sociaux, emailings, visuels, tout est pensé pour vous faire gagner du temps.",
+                "features": [
+                    "Création de visuels pour les réseaux sociaux",
+                    "Planning de publication & rédaction de posts",
+                    "Campagnes emailing avec analyse des résultats",
+                    "Support et conseil pour améliorer votre visibilité"
+                ],
+                "images": [
+                    "./imgs/services/pack-3_1.webp",
+                    "./imgs/services/pack-3_2.webp",
+                    "./imgs/services/pack-3_3.webp",
+                    "./imgs/services/pack-3_4.webp"
+                ],
+                "discover_offer": "Je booste ma communication"
+            },
+            {
+                "title": "Automatisation avec l’IA",
+                "description": "Nous analysons vos tâches répétitives et mettons en place des automatisations simples grâce à l’intelligence artificielle. Moins de charge mentale, plus de temps pour vous.",
+                "features": [
+                    "Audit de vos tâches manuelles ou chronophages",
+                    "Mise en place d’automatisations adaptées",
+                    "Outils IA accessibles et faciles à utiliser",
+                    "Accompagnement personnalisé et support"
+                ],
+                "images": [
+                    "./imgs/services/pack-4_1.webp",
+                    "./imgs/services/pack-4_2.webp",
+                    "./imgs/services/pack-4_3.webp",
+                    "./imgs/services/pack-4_4.webp"
+                ],
+                "discover_offer": "Je veux automatiser mon business"
+            }
+        ]
     },
     "process": {
-        "title": "Un processus clair pour des résultats concrets",
-        "description": "Notre méthodologie repose sur l’écoute, la collaboration et l’expertise. De la première prise de contact à la mise en ligne, chaque étape est pensée pour garantir un projet fluide, maîtrisé et performant.",
+        "title": "Un accompagnement simple, fluide et personnalisé",
+        "description": "De la première prise de contact jusqu’à la mise en ligne ou la livraison, chaque étape est pensée pour vous faire gagner du temps et vous simplifier le digital.",
         "steps": [
             {
                 "title": "Prise de contact",
-                "description": "Nous échangeons avec vous pour comprendre vos besoins.",
-                "icon": "ti-comments",
+                "description": "Vous choisissez votre service et nous contactez via le formulaire ou directement par téléphone.",
+                "icon": "ti-agenda",
                 "image": "./imgs/process1.webp"
             },
             {
-                "title": "Proposition & maquette",
-                "description": "Nous soumettons une proposition de style et de structure.",
-                "icon": "ti-layout",
+                "title": "Échange & besoins",
+                "description": "On discute ensemble de votre projet, de vos objectifs, et de la solution la plus adaptée à votre activité.",
+                "icon": "ti-comments",
                 "image": "./imgs/process2.webp"
             },
             {
-                "title": "Développement",
-                "description": "Création du site ou de l'app selon les specs validées.",
-                "icon": "ti-settings",
+                "title": "Proposition claire",
+                "description": "Vous recevez un devis simple et détaillé. Aucun jargon, aucun engagement caché. Tout est transparent.",
+                "icon": "ti-clipboard",
                 "image": "./imgs/process3.webp"
             },
             {
-                "title": "Optimisation",
-                "description": "Tests, SEO, compatibilité, performance.",
-                "icon": "ti-bar-chart",
+                "title": "Lancement du projet",
+                "description": "Une fois le devis validé, on lance la production de votre site, boutique ou stratégie marketing.",
+                "icon": "ti-rocket",
                 "image": "./imgs/process4.webp"
             },
             {
-                "title": "Livraison",
-                "description": "Mise en ligne & accompagnement post-livraison.",
-                "icon": "ti-check-box",
+                "title": "Suivi & ajustements",
+                "description": "Vous suivez les avancées, vous validez les étapes, et on reste disponibles pour adapter si besoin.",
+                "icon": "ti-reload",
                 "image": "./imgs/process5.webp"
             },
             {
-                "title": "Suivi & Maintenance",
-                "description": "Maintenance de votre projet web et amélioration continue.",
+                "title": "Mise en ligne & support",
+                "description": "Votre solution est prête ! On vous accompagne pour la prise en main, et on reste disponibles si besoin.",
                 "icon": "ti-check-box",
                 "image": "./imgs/process6.webp"
             }
         ],
-        "button": "Discutons de votre projet"
+        "button": "Démarrer mon projet"
     },
     "team": {
         "title": "Notre équipe",
-        "description": "Une équipe passionnée d'experts du web, du design, de la tech et du marketing digital, réunie pour concrétiser vos projets.",
+        "description": "Des esprits créatifs et un peu geeks, réunis pour créer des sites qui déchirent, des automatisations futées et des visuels qui font mouche 💻🚀",
         "members": [
             {
                 "name": "Sam H.",
-                "role": "Développeur full-stack",
-                "bio": "Il conçoit et développe des applications web robustes et sur mesure, en alliant performance, sécurité et expérience utilisateur optimale.",
+                "role": "Chef de projet & bidouilleur digital ⚙️",
+                "bio": "Sam coordonne les projets, construit les sites, connecte les outils, et résout les bugs avant même qu’ils apparaissent. Oui, il dort parfois.",
                 "image": "./imgs/team/team1.webp"
             },
             {
                 "name": "Shaade H.",
-                "role": "UX/UI Designer",
-                "bio": "Elle imagine des interfaces modernes et intuitives, centrées sur l’utilisateur, pour transformer chaque visite en une expérience mémorable.",
+                "role": "Designer de l’expérience web 🎨",
+                "bio": "Shaade donne vie à vos sites avec des interfaces stylées, claires et responsive. UX, couleurs, typo : elle fait matcher tout ça à votre image.",
                 "image": "./imgs/team/team2.webp"
             },
             {
                 "name": "Renato S.",
-                "role": "Cadreur - monteur",
-                "bio": "Il capte l’essence de votre marque à travers des vidéos percutantes et dynamiques, du tournage jusqu’au montage final.",
+                "role": "Roi du contenu & des visuels 📸",
+                "bio": "Renato crée des visuels impactants pour vos réseaux, vos pages produits ou vos campagnes. Canva, montage vidéo ou IA : il gère tout.",
                 "image": "./imgs/team/team3.webp"
             },
             {
                 "name": "Habby H.",
-                "role": "Juriste",
-                "bio": "Elle veille à la conformité juridique de vos projets digitaux, en vous accompagnant sur les aspects réglementaires, RGPD et contrats.",
+                "role": "Responsable zen & conformité 🧘‍♀️",
+                "bio": "RGPD, factures, conditions générales : Habby veille à ce que tout soit clean et carré. Un vrai bouclier administratif, avec le sourire.",
                 "image": "./imgs/team/team4.webp"
             }
         ]
     },
-    "pricing": {
-        "title": "Nos offres clés en main",
-        "description": "Des packs clairs et transparents pour lancer votre présence digitale efficacement, avec tout ce dont vous avez besoin.",
-        "packs": [
-            {
-                "name": "Pack Vitrine Express",
-                "price": "690€",
-                "features": [
-                    "Site vitrine d'une page",
-                    "Formulaire de contact",
-                    "Référencement de base",
-                    "Carte Google My Business",
-                    "Nom de domaine + Email pro",
-                    "Création de logo incluse",
-                    "Intégration Google Analytics"
-                ],
-                "options": [
-                    "Ajout d’un blog optimisé SEO",
-                    "Ajout de pages supplémentaires",
-                    "Version multilingue du site"
-                ],
-                "highlight": true,
-                "button": "Créer mon site web",
-                "note": "Idéal pour une présence en ligne rapide et professionnelle."
-            },
-            {
-                "name": "Pack E-Commerce",
-                "price": "1290€",
-                "features": [
-                    "Création d'un Site e-commerce",
-                    "Paiement en ligne sécurisé",
-                    "Référencement de base",
-                    "Carte Google My Business",
-                    "Nom de domaine + Email pro",
-                    "Création de logo incluse",
-                    "Analyse avec Google Analytics"
-                ],
-                "options": [
-                    "Ajout d’un blog optimisé SEO",
-                    "Ajout de pages supplémentaires",
-                    "Version multilingue du site"
-                ],
-                "highlight": false,
-                "button": "Créer ma boutique",
-                "note": "Parfait pour vendre vos produits en ligne efficacement."
-            },
-            {
-                "name": "Pack Marketing Booster",
-                "price": "890€ / mois",
-                "features": [
-                    "Automatisation marketing",
-                    "Gestion des réseaux sociaux",
-                    "Génération d’articles de blog",
-                    "Emailings automatisés",
-                    "Création de visuels et contenus IA",
-                    "Analyse des performances",
-                    "Maintenance et évolutions"
-                ],
-                "options": [
-                    "Campagnes Google Ads",
-                    "Plan de contenu personnalisé",
-                    "Calendrier éditorial IA"
-                ],
-                "highlight": false,
-                "button": "Créer ma communication",
-                "note": "Boostez votre visibilité sans effort avec nos outils d'automatisation."
-            },
-            {
-                "name": "Pack IA Sur-Mesure",
-                "price": "Sur devis",
-                "features": [
-                    "Audit et analyse des processus",
-                    "Automatisation des tâches",
-                    "Automatisation via IA",
-                    "Développement d’outils internes",
-                    "Intégration de chatbots",
-                    "Dashboards personnalisés",
-                    "Accompagnement sur mesure"
-                ],
-                "options": [
-                    "Connecteurs API métiers",
-                    "IA générative intégrée",
-                    "Interface sur mesure"
-                ],
-                "highlight": false,
-                "button": "Demander un devis",
-                "note": "Libérez le potentiel de l'IA pour votre entreprise."
-            }
-        ]
-    },
-    "testimonials": {
-        "title": "Ce que disent nos clients",
-        "description": "Ils nous ont fait confiance. Découvrez les retours d'expérience de nos clients après avoir collaboré avec notre équipe sur leurs projets digitaux.",
-        "items": [
-            {
-                "text": "L’équipe a su créer notre site vitrine en un temps record, avec un design moderne et parfaitement adapté à nos besoins. Une prestation très pro.",
-                "name": "Julie Martin",
-                "role": "Fondatrice de LUX'Events",
-                "image": "https://dummyimage.com/106x106/8e44ad/ffffff&text=J"
-            },
-            {
-                "text": "Grâce à leur expertise en référencement, notre trafic a triplé en 3 mois. Mention spéciale pour leur suivi après livraison !",
-                "name": "Karim Haddad",
-                "role": "Consultant SEO",
-                "image": "https://dummyimage.com/107x107/2980b9/ffffff&text=K"
-            },
-            {
-                "text": "J’ai adoré leur capacité à intégrer un système de réservation intelligent avec automatisation d’e-mails. Gain de temps énorme.",
-                "name": "Claire Besson",
-                "role": "Coach sportive",
-                "image": "https://dummyimage.com/108x108/27ae60/ffffff&text=C"
-            },
-            {
-                "text": "Un site e-commerce magnifique, un tunnel de vente bien pensé, et des campagnes marketing efficaces. Très bon rapport qualité/prix.",
-                "name": "Yassine Lefèvre",
-                "role": "E-commerçant",
-                "image": "https://dummyimage.com/109x109/f39c12/ffffff&text=Y"
-            },
-            {
-                "text": "Collaboration fluide et à l’écoute. Leur équipe a su transformer nos idées en une application mobile intuitive et performante.",
-                "name": "Sophie Renault",
-                "role": "Responsable projet digital",
-                "image": "https://dummyimage.com/110x110/e74c3c/ffffff&text=S"
-            },
-            {
-                "text": "Leur accompagnement personnalisé nous a permis de moderniser notre image en ligne. Résultat : +40% de demandes de devis en un mois !",
-                "name": "Antoine Delmas",
-                "role": "Gérant de Menuitech",
-                "image": "https://dummyimage.com/111x111/1abc9c/ffffff&text=A"
-            },
-            {
-                "text": "Un service client ultra réactif, une compréhension rapide de notre métier… Ils ont su livrer un site ultra pro, dans les délais.",
-                "name": "Fatima Zahra",
-                "role": "Architecte d’intérieur",
-                "image": "https://dummyimage.com/112x112/9b59b6/ffffff&text=F"
-            },
-            {
-                "text": "Notre plateforme de formation en ligne est un succès. Interface claire, système de paiement intégré, et une vraie attention au détail.",
-                "name": "Marc Teyssier",
-                "role": "Formateur indépendant",
-                "image": "https://dummyimage.com/113x113/34495e/ffffff&text=M"
-            }
-        ]
-    },
-    "contact": {
-        "title": "Comment nous contacter?",
-        "description": "Besoin d’un site web, d’un accompagnement digital ou d’un devis rapide ? Parlons-en ! Notre équipe vous répond sous 24h.",
-        "address": "22 avenue Jean De Lattre de Tassigny, Cannes, France",
-        "email": "contact@exemple.com",
-        "phone": "+33 6 12 34 56 78",
-        "map_embed_url": "https://maps.google.com/maps?q=22%20avenue%20Jean%20De%20Lattre%20de%20Tassigny,%20Cannes&hl=fr&z=14&output=embed",
-        "form_intro": "Vous avez une question, un projet ou besoin d’un conseil ? Envoyez-nous un message !"
-    },
-    "newsletter": {
-        "title": "Ne manquez rien de notre actualité",
-        "description": "Recevez nos conseils digitaux, nos offres spéciales et les coulisses de nos projets, 2 fois par mois.",
-        "placeholder": "Votre adresse email",
-        "button": "Je m'abonne",
-        "disclaimer": "Pas de spam, vous pouvez vous désinscrire à tout moment."
-    },
-    "footer": {
-        "columns": [
-            {
-                "title": "Nos packs",
-                "links": [
-                    {
-                        "label": "Pack Vitrine Express",
-                        "url": "?/#pricing"
-                    },
-                    {
-                        "label": "Pack E-Commerce",
-                        "url": "?/#pricing"
-                    },
-                    {
-                        "label": "Pack Marketing & Automatisation",
-                        "url": "?/#pricing"
-                    },
-                    {
-                        "label": "Pack IA & Sur-Mesure",
-                        "url": "?/#pricing"
-                    }
-                ]
-            },
-            {
-                "title": "Expertises",
-                "links": [
-                    {
-                        "label": "La création de site web",
-                        "url": "?/#offers"
-                    },
-                    {
-                        "label": "Le référencement sur internet",
-                        "url": "?/#offers"
-                    },
-                    {
-                        "label": "Automatisation marketing",
-                        "url": "?/#offers"
-                    },
-                    {
-                        "label": "L'intelligence artificielle",
-                        "url": "?/#offers"
-                    }
-                ]
-            },
-            {
-                "title": "À propos",
-                "links": [
-                    {
-                        "label": "Politique de confidentialités",
-                        "url": "confidential.php"
-                    },
-                    {
-                        "label": "Mention légales",
-                        "url": "legal_mentions.php"
-                    },
-                    {
-                        "label": "Politique de cookies",
-                        "url": "cookies_mentions.php"
-                    },
-                    {
-                        "label": "CGU",
-                        "url": "cgu.php"
-                    }
-                ]
-            }
-        ],
-        "subscribe": {
-            "label": "Votre adresse email",
-            "button": "S'inscrire",
-            "message": "Inscrivez-vous à notre newsletter pour ne rien manquer de nos nouveautés."
-        },
-        "bottom": {
-            "brand": "Click & Visible",
-            "copyright": "© 2025 Click & Visible",
-            "twitter": "@Click&Visible",
-            "socials": {
-                "facebook": "https://facebook.com/ademiews",
-                "twitter": "https://twitter.com/ademiews",
-                "instagram": "https://instagram.com/ademiews",
-                "linkedin": "https://linkedin.com/company/ademiews"
-            }
-        },
-        "contact": {
-            "title": "Nous contacter",
-            "email_label": "Email",
-            "email_value": "mail@mail.com",
-            "phone_label": "Téléphone",
-            "phone_value": "07 82 14 81 41"
-        }
-    },
     "portfolio": {
-        "title": "Nos réalisations",
-        "description": "Découvrez une sélection de projets que nous avons réalisés pour nos clients ces derniers mois. De la création de sites web sur mesure aux applications mobiles, en passant par des identités visuelles fortes et du branding complet, chaque réalisation reflète notre engagement à proposer des solutions adaptées, performantes et esthétiques. Notre équipe vous accompagne de A à Z, de l'idée initiale à la mise en ligne, avec un souci constant de qualité et d'impact.",
+        "title": "Nos projets réalisés",
+        "description": "Voici un aperçu concret de ce que nous avons créé pour nos clients : sites vitrines, boutiques en ligne, portfolios, plateformes de formation… Chaque projet est conçu sur-mesure, selon les besoins et le budget. Inspirez-vous de ces exemples pour imaginer votre propre présence en ligne.",
         "projects": [
             {
                 "title": "Plateforme de formation en ligne",
@@ -505,202 +324,381 @@
             }
         ]
     },
-    "faq": {
-        "title": "Questions fréquentes",
-        "description": "Si vous avez une question, elle a probablement déjà été posée. N'hésitez pas à consulter notre FAQ en cliquant sur les questions ci-dessous.",
+    "testimonials": {
+        "title": "Ce que disent nos clients",
+        "description": "Entrepreneurs, indépendants, petites entreprises... Ils nous ont fait confiance pour créer leur site, développer leur visibilité ou automatiser leur quotidien.",
         "items": [
             {
-                "question": "L’hébergement est-il compris ? Et le nom de domaine?",
-                "answer": [
-                    "Oui, tous nos packs incluent une solution d’hébergement fiable et rapide, ou nous vous aidons à connecter le vôtre. En revanche, le nom de domaine reste à votre charge."
-                ]
+                "text": "Click & Visible a créé mon site vitrine en un temps record. Simple, pro et vraiment adapté à mon activité. Je recommande sans hésiter !",
+                "name": "Lina M.",
+                "role": "Coach en développement personnel",
+                "image": "https://dummyimage.com/106x106/4c1d95/ffffff&text=L",
+                "rating": 5
             },
             {
-                "question": "Est-ce que je peux modifier mon site après livraison ?",
-                "answer": [
-                    "Oui, tous nos sites sont livrés avec une interface simple pour que vous puissiez modifier vos textes, images ou produits en toute autonomie."
-                ]
+                "text": "J’avais besoin d’un site e-commerce fonctionnel et rapide. Tout a été pris en main de A à Z, avec de très bons conseils. Une vraie tranquillité d’esprit.",
+                "name": "Kevin B.",
+                "role": "Artisan créateur",
+                "image": "https://dummyimage.com/107x107/8e44ad/ffffff&text=K",
+                "rating": 5
             },
             {
-                "question": "Avez-vous besoin que je fournisse du contenu (textes, images) ?",
-                "answer": [
-                    "Nous pouvons créer un site avec vos contenus si vous les avez. Sinon, nous vous accompagnons pour les générer avec notre aide ou avec l’IA."
-                ]
+                "text": "L’équipe m’a aidée à structurer mes publications Instagram et à lancer ma première campagne emailing. J’ai gagné du temps et des clients !",
+                "name": "Sophie T.",
+                "role": "Graphiste indépendante",
+                "image": "https://dummyimage.com/108x108/f39c12/ffffff&text=S",
+                "rating": 5
             },
             {
-                "question": "Combien de temps faut-il pour créer mon site ?",
-                "answer": [
-                    "Le Pack Vitrine Express est livré en 48h. Les autres packs varient entre 5 à 10 jours selon votre projet."
-                ]
+                "text": "Je ne connaissais rien à l’automatisation. Sam a tout simplifié et j’économise maintenant plusieurs heures chaque semaine. Top !",
+                "name": "Yassine R.",
+                "role": "Consultant en freelance",
+                "image": "https://dummyimage.com/109x109/1abc9c/ffffff&text=Y",
+                "rating": 5
             },
             {
-                "question": "Est-ce que mon site sera visible sur Google ?",
+                "text": "Excellent accompagnement pour la refonte de notre site. Design moderne, bon référencement et une vraie écoute. Merci à toute l’équipe !",
+                "name": "Julie D.",
+                "role": "Gérante de boutique",
+                "image": "https://dummyimage.com/110x110/2ecc71/ffffff&text=J",
+                "rating": 5
+            },
+            {
+                "text": "Un site e-commerce livré clé en main, avec un tutoriel pour tout gérer moi-même. Super service client, hyper réactif et bienveillant.",
+                "name": "Antoine C.",
+                "role": "Vendeur de produits naturels",
+                "image": "https://dummyimage.com/111x111/ff4fd8/ffffff&text=A",
+                "rating": 5
+            }
+        ]
+    },
+    "pricing": {
+        "title": "Nos offres clé en main pour vos projets",
+        "description": "Des packs complets, professionnels et simples à réserver pour créer une présence en ligne efficace et esthétique, selon vos besoins.",
+        "packs": [
+            {
+                "name": "Pack Site Vitrine Pro",
+                "price": "690€ HT",
+                "features": [
+                    "Site responsive & design pro",
+                    "5 pages : accueil à contact",
+                    "Hébergement inclus à vie",
+                    "Multilingue (3 langues)",
+                    "Google Analytics intégré",
+                    "Fiche Google optimisée"
+                ],
+                "options": [
+                    "Ajout d’un blog simple",
+                    "Création réseaux sociaux",
+                    "Automatisation marketing",
+                    "SEO avancé (balises + mots)"
+                ],
+                "highlight": true,
+                "button": "Réserver mon site vitrine",
+                "note": "Un site pro, simple et complet."
+            },
+            {
+                "name": "Pack E-commerce",
+                "price": "1 490€ HT",
+                "features": [
+                    "Produits illimités en ligne",
+                    "Panier & paiement sécurisé",
+                    "Design mobile & personnalisé",
+                    "Formation vidéo incluse",
+                    "Pages : accueil à mentions",
+                    "Outils connectés (CRM, mail)"
+                ],
+                "options": [
+                    "Automatisation marketing",
+                    "Promos et codes réductions",
+                    "Tunnel de vente optimisé",
+                    "Rédaction fiches produits"
+                ],
+                "highlight": false,
+                "button": "Lancer ma boutique en ligne",
+                "note": "Vendez 24h/24, sans stress."
+            },
+            {
+                "name": "Pack Visibilité & Réseaux",
+                "price": "490€ HT",
+                "features": [
+                    "Automatisation marketing",
+                    "Gestion des réseaux sociaux",
+                    "Campagnes marketing",
+                    "Mise en place newsletter",
+                    "Emailings automatisés",
+                    "Création de visuels et contenus IA"
+                ],
+                "options": [
+                    "Campagne Google Ads",
+                    "Calendrier éditorial automatisé",
+                    "Maintance et évolutions",
+                    "Analyse des performances"
+                ],
+                "highlight": false,
+                "button": "Booster ma visibilité",
+                "note": "Gagnez du temps et des vues."
+            },
+            {
+                "name": "Pack Automatisation & IA",
+                "price": "Sur devis",
+                "features": [
+                    "Audit de vos routines",
+                    "Scénarios automatisés",
+                    "Outils IA personnalisés",
+                    "Support & tests inclus",
+                    "Formation à distance",
+                    "Connexion d’outils web"
+                ],
+                "options": [
+                    "Chatbot ou assistant IA",
+                    "Devis/factures automatiques",
+                    "Dashboard de suivi",
+                    "Posts auto sur réseaux"
+                ],
+                "highlight": false,
+                "button": "Réaliser un devis personnalisé",
+                "note": "Automatisez, déléguez, respirez."
+            }
+        ],
+        "available_options_title": "Options disponibles",
+        "custom_request_notice": {
+            "text": "Vous avez un besoin spécifique ou une idée sur mesure en tête ?",
+            "link_label": "Contactez-nous via le formulaire",
+            "link_href": "#contact",
+            "after_text": "et parlons-en !"
+        }
+    },
+    "contact": {
+        "contact": {
+            "title": "Un projet web en tête ? Parlons-en 👋",
+            "description": "Besoin d’un site, d’une boutique, d’un coup de boost sur les réseaux ou d’automatiser votre business ? Écrivez-nous, on vous répond vite avec des solutions concrètes.",
+            "address": "22 avenue Jean De Lattre de Tassigny, Cannes, France",
+            "email": "contact_clicketvisible@gmail.com",
+            "phone": "07 82 14 81 41",
+            "map_embed_url": "https://maps.google.com/maps?q=22%20avenue%20Jean%20De%20Lattre%20de%20Tassigny,%20Cannes&hl=fr&z=14&output=embed",
+            "form_tab_label": "Contact rapide",
+            "form_intro": "Une question ? Un projet à valider ? Laissez-nous un message, on revient vers vous rapidement ✉️",
+            "form_title": "Formulaire de contact",
+            "form_button": "Envoyer",
+            "form_note": "Réponse sous 24h, du lundi au samedi, avec écoute et bienveillance 💬",
+            "form_fields": {
+                "name_label": "Nom",
+                "name_placeholder": "Votre nom complet",
+                "email_label": "Email",
+                "email_placeholder": "votre@email.com",
+                "message_label": "Message",
+                "message_placeholder": "Expliquez-nous votre besoin ou posez votre question..."
+            }
+        },
+        "estimate": {
+            "tab_label": "Demande de devis",
+            "title": "Obtenez un devis personnalisé",
+            "description": "Dites-nous ce que vous souhaitez : création de site, boutique, contenu ou automatisation… On vous envoie une proposition claire, rapide et adaptée à votre budget.",
+            "button": "Envoyer la demande",
+            "fields": {
+                "name_label": "Nom",
+                "name_placeholder": "Votre nom",
+                "email_label": "Email",
+                "email_placeholder": "votre@email.com",
+                "offer_label": "Service souhaité",
+                "message_label": "Détails du projet",
+                "message_placeholder": "Objectifs, budget, délai, type de service, options souhaitées..."
+            },
+            "form_note": "On vous prépare une solution sur mesure, toujours avec le sourire 😄"
+        },
+        "pricing": {
+            "packs": [
+                {
+                    "name": "Site Vitrine Pro",
+                    "price": "690€ HT"
+                },
+                {
+                    "name": "Site E-commerce",
+                    "price": "1 490€ HT"
+                },
+                {
+                    "name": "Visibilité & Réseaux",
+                    "price": "490€ HT"
+                },
+                {
+                    "name": "Automatisation & IA",
+                    "price": "Sur devis"
+                },
+                {
+                    "name": "Pack sur-mesure",
+                    "price": "Sur devis"
+                }
+            ]
+        }
+    },
+    "faq": {
+        "title": "Questions fréquentes",
+        "description": "Vous avez un doute ? Voici les réponses aux questions que l’on nous pose le plus souvent avant de démarrer un projet.",
+        "items": [
+            {
+                "question": "L’hébergement et le nom de domaine sont-ils inclus ?",
                 "answer": [
-                    "Oui, tous nos sites incluent une optimisation SEO de base pour être bien référencés sur Google."
+                    "Oui, l’hébergement est inclus à vie pour la création de site vitrine. Le nom de domaine est aussi pris en charge si vous n’en avez pas encore mais reste payant."
                 ]
             },
             {
                 "question": "Puis-je utiliser mon propre nom de domaine ?",
                 "answer": [
-                    "Oui, nous configurons votre site avec votre nom de domaine existant ou vous aidons à en acheter un."
+                    "Oui, si vous avez déjà un nom de domaine, nous pouvons le connecter à votre nouveau site sans problème."
                 ]
             },
             {
-                "question": "Que se passe-t-il si j’ai un problème avec le site ?",
+                "question": "Est-ce que je peux modifier mon site après la livraison ?",
                 "answer": [
-                    "Nous proposons un support réactif pour vous aider à tout moment, selon l’offre que vous choisissez."
+                    "Oui, vous avez un accès complet à votre site. Et on vous montre comment le mettre à jour facilement."
+                ]
+            },
+            {
+                "question": "Avez-vous besoin que je fournisse les contenus ?",
+                "answer": [
+                    "Idéalement oui (textes, images, logo). Mais si vous n’en avez pas, on peut vous accompagner ou créer pour vous."
+                ]
+            },
+            {
+                "question": "Combien de temps pour créer un site ?",
+                "answer": [
+                    "Comptez environ 10 à 15 jours pour un site vitrine, 15 à 25 pour une boutique, selon les contenus et options."
+                ]
+            },
+            {
+                "question": "Mon site sera-t-il visible sur Google ?",
+                "answer": [
+                    "Oui ! Tous nos sites sont optimisés pour le référencement naturel (SEO) de base dès la livraison."
                 ]
             },
             {
                 "question": "Est-ce que vous vous occupez de la maintenance ?",
                 "answer": [
-                    "Oui, nous proposons des options de maintenance mensuelle pour garder votre site à jour, sécurisé et performant."
+                    "Oui, nous proposons un service de maintenance en option : mises à jour, sécurité, support technique."
+                ]
+            },
+            {
+                "question": "Que se passe-t-il si j’ai un problème technique ?",
+                "answer": [
+                    "On reste disponibles après la livraison. Vous pouvez nous contacter par email ou téléphone à tout moment."
                 ]
             },
             {
                 "question": "Le paiement est-il unique ou mensuel ?",
                 "answer": [
-                    "Nos packs sont généralement à paiement unique. Certaines options (comme la maintenance) peuvent être sous forme d’abonnement mensuel."
+                    "Nos packs sont à paiement unique. Des facilités de paiement en plusieurs fois sont possibles sur demande."
                 ]
             },
             {
-                "question": "Puis-je vous contacter facilement en cas de besoin ?",
+                "question": "Puis-je vous contacter facilement ?",
                 "answer": [
-                    "Bien sûr ! Vous pouvez nous contacter par email, téléphone ou WhatsApp. Nous restons disponibles et réactifs."
+                    "Oui, par mail, téléphone ou formulaire. On vous répond vite, avec des explications claires et sans jargon."
+                ]
+            },
+            {
+                "question": "Puis-je vendre en ligne avec vous ?",
+                "answer": [
+                    "Bien sûr ! Notre pack e-commerce vous permet de vendre vos produits avec paiement en ligne sécurisé."
+                ]
+            },
+            {
+                "question": "Faites-vous aussi du sur-mesure ?",
+                "answer": [
+                    "Oui, si votre besoin sort des packs proposés, on vous prépare un devis adapté. Parlez-nous de votre idée !"
                 ]
             }
         ]
     },
-    "banner_services": [
-        {
-            "icon": "ti-world",
-            "title": "Création de site web",
-            "description": "Sites vitrines, e-commerce, sur-mesure et optimisés pour le SEO."
+    "footer": {
+        "columns": [
+            {
+                "title": "Nos packs",
+                "links": [
+                    {
+                        "label": "Site Vitrine Pro",
+                        "url": "?/#pricing"
+                    },
+                    {
+                        "label": "Site E-commerce",
+                        "url": "?/#pricing"
+                    },
+                    {
+                        "label": "Visibilité & Réseaux",
+                        "url": "?/#pricing"
+                    },
+                    {
+                        "label": "Automatisation & IA",
+                        "url": "?/#pricing"
+                    }
+                ]
+            },
+            {
+                "title": "Nos services",
+                "links": [
+                    {
+                        "label": "Création de site internet",
+                        "url": "?/#offers"
+                    },
+                    {
+                        "label": "Vente en ligne",
+                        "url": "?/#offers"
+                    },
+                    {
+                        "label": "Marketing digital",
+                        "url": "?/#offers"
+                    },
+                    {
+                        "label": "Automatisation IA",
+                        "url": "?/#offers"
+                    }
+                ]
+            },
+            {
+                "title": "À propos",
+                "links": [
+                    {
+                        "label": "Politique de confidentialité",
+                        "url": "confidential.php"
+                    },
+                    {
+                        "label": "Mentions légales",
+                        "url": "legal_mentions.php"
+                    },
+                    {
+                        "label": "Politique de cookies",
+                        "url": "cookies_mentions.php"
+                    },
+                    {
+                        "label": "CGU",
+                        "url": "cgu.php"
+                    }
+                ]
+            }
+        ],
+        "subscribe": {
+            "label": "Votre adresse email",
+            "button": "S'inscrire",
+            "message": "Recevez nos conseils web, offres exclusives et astuces pour booster votre visibilité en ligne."
         },
-        {
-            "icon": "ti-stats-up",
-            "title": "Marketing digital",
-            "description": "Réseaux sociaux, Google Ads, stratégie de contenu et visibilité."
+        "bottom": {
+            "brand": "Click & Visible",
+            "copyright": "© 2025 Click & Visible",
+            "twitter": "@ClicketVisible",
+            "socials": {
+                "facebook": "https://facebook.com/clicketvisible",
+                "twitter": "https://twitter.com/clicketvisible",
+                "instagram": "https://instagram.com/clicketvisible",
+                "linkedin": "https://linkedin.com/company/clicketvisible"
+            }
         },
-        {
-            "icon": "ti-palette",
-            "title": "Identité visuelle",
-            "description": "Création de logo, charte graphique et univers de marque cohérent."
-        },
-        {
-            "icon": "ti-light-bulb",
-            "title": "Optimisation par l'IA",
-            "description": "Automatisation, chatbots, analyse de données et gain de productivité."
+        "contact": {
+            "title": "Nous contacter",
+            "email_label": "Email",
+            "email_value": "contact_clicketvisible@gmail.com",
+            "phone_label": "Téléphone",
+            "phone_value": "07 82 14 81 41"
         }
-    ],
-    "offer_details": {
-        "title": "Des offres taillées pour vos objectifs",
-        "description": "Chaque pack a été pensé pour répondre à un besoin précis. Que vous lanciez votre activité, développiez une boutique en ligne, cherchiez à automatiser votre communication ou à intégrer l’intelligence artificielle dans vos process, nous avons une solution adaptée à votre ambition.",
-        "items": [
-            {
-                "title": "Pack Vitrine Express",
-                "description": "Un site web professionnel en un temps record. Idéal pour les indépendants, artisans ou petites structures souhaitant une présence rapide et soignée sur le web.",
-                "features": [
-                    "Livraison en 48h",
-                    "Formulaire de contact intégré",
-                    "Référencement de base pour Google",
-                    "Création de logo incluse"
-                ],
-                "images": [
-                    "./imgs/services/pack-1_1.webp",
-                    "./imgs/services/pack-1_2.webp",
-                    "./imgs/services/pack-1_3.webp",
-                    "./imgs/services/pack-1_4.webp"
-                ]
-            },
-            {
-                "title": "Pack E-Commerce Clé en Main",
-                "description": "Lancez votre boutique en ligne avec une solution complète sur Shopify ou WooCommerce. Design pro, tunnel de vente optimisé, et formation à la gestion.",
-                "features": [
-                    "Mise en ligne rapide de votre boutique",
-                    "Gestion facile des produits et commandes",
-                    "Design responsive et professionnel",
-                    "Configuration des paiements sécurisés"
-                ],
-                "images": [
-                    "./imgs/services/pack-2_1.webp",
-                    "./imgs/services/pack-2_2.webp",
-                    "./imgs/services/pack-2_3.webp",
-                    "./imgs/services/pack-2_4.webp"
-                ]
-            },
-            {
-                "title": "Pack Marketing & Automatisation",
-                "description": "Boostez votre visibilité en ligne avec des outils d’automatisation, du contenu généré par IA et des stratégies performantes pour attirer et fidéliser vos clients.",
-                "features": [
-                    "Automatisation des posts réseaux sociaux",
-                    "Génération automatique d'articles de blog",
-                    "Campagnes d’e-mailing ciblées",
-                    "Création de visuels par IA"
-                ],
-                "images": [
-                    "./imgs/services/pack-3_1.webp",
-                    "./imgs/services/pack-3_2.webp",
-                    "./imgs/services/pack-3_3.webp",
-                    "./imgs/services/pack-3_4.webp"
-                ]
-            },
-            {
-                "title": "Pack IA & Sur-Mesure",
-                "description": "Nous analysons vos besoins spécifiques et déployons des outils IA sur mesure pour automatiser vos tâches répétitives et améliorer votre rentabilité.",
-                "features": [
-                    "Audit stratégique et technique",
-                    "Développement de solutions IA dédiées",
-                    "Intégration de chatbots",
-                    "Automatisation des processus internes"
-                ],
-                "images": [
-                    "./imgs/services/pack-4_1.webp",
-                    "./imgs/services/pack-4_2.webp",
-                    "./imgs/services/pack-4_3.webp",
-                    "./imgs/services/pack-4_4.webp"
-                ]
-            }
-        ]
-    },
-    "presentation": {
-        "intro": {
-            "image": "./imgs/services/header.webp",
-            "name": "Samih Habbani",
-            "role": "Fondateur de l'agence",
-            "bio": "Notre mission est simple : offrir à chaque client un site qui cartonne, sans prise de tête. Notre équipe combine design, technique et stratégie pour faire décoller votre activité en ligne.",
-            "description": "Nous pensons qu’un site bien conçu peut être un véritable levier de croissance. C’est pourquoi chaque pack a été pensé pour répondre à des besoins concrets, avec clarté, efficacité et un bon rapport qualité-prix."
-        },
-        "highlights": [
-            {
-                "image": "./imgs/services/reason-1.webp",
-                "subtitle": "Expertise",
-                "title": "Création de sites impactants",
-                "description": "Des sites modernes, rapides, et pensés pour convertir vos visiteurs en clients."
-            },
-            {
-                "image": "./imgs/services/reason-2.webp",
-                "subtitle": "Référencement",
-                "title": "SEO dès le départ",
-                "description": "Nos packs intègrent les bonnes pratiques SEO pour une visibilité optimale."
-            },
-            {
-                "image": "./imgs/services/reason-3.webp",
-                "subtitle": "Marketing",
-                "title": "Des outils pour vendre",
-                "description": "Formulaire, Google My Business, tracking... tout est là pour développer votre activité."
-            },
-            {
-                "image": "./imgs/services/reason-4.webp",
-                "subtitle": "Support",
-                "title": "Accompagnement humain",
-                "description": "Nous restons disponibles même après la mise en ligne pour vous aider à évoluer."
-            }
-        ]
-    },
-    "estimate": {
-        "title": "Demande de devis",
-        "description": "Vous avez trouvé une offre qui vous intéresse ? Remplissez ce formulaire pour obtenir un devis adapté à vos besoins."
     },
     "chat": {
         "toggle_label": "Chat",
@@ -717,5 +715,168 @@
     "cookies": {
         "message": "Nous utilisons des cookies pour améliorer votre expérience. En continuant, vous acceptez notre politique de confidentialité.",
         "button": "J'accepte"
+    },
+    "cgu": {
+        "title": "Conditions Générales d’Utilisation (CGU)",
+        "last_update": "2025-04-09",
+        "sections": [
+            {
+                "title": "1. Objet",
+                "content": "Les présentes Conditions Générales d’Utilisation régissent l’accès et l’usage du site par tout utilisateur. En naviguant sur ce site, vous acceptez pleinement et entièrement ces CGU."
+            },
+            {
+                "title": "2. Accès au site",
+                "content": "Le site est accessible 7j/7 et 24h/24 sauf interruption pour maintenance ou cas de force majeure. L’éditeur ne peut être tenu responsable des éventuelles interruptions."
+            },
+            {
+                "title": "3. Utilisation du site",
+                "content": "L’utilisateur s’engage à ne pas perturber le bon fonctionnement du site et à ne pas utiliser les services de manière frauduleuse ou illégale."
+            },
+            {
+                "title": "4. Propriété intellectuelle",
+                "content": "Tous les contenus présents sur le site (textes, images, vidéos, graphismes, logos…) sont protégés par les lois sur la propriété intellectuelle. Toute reproduction non autorisée est strictement interdite."
+            },
+            {
+                "title": "5. Données personnelles",
+                "content": "Les informations collectées via le formulaire de contact ou le chat sont traitées conformément au RGPD. Consultez notre <a href='confidentialite.php' class='text-amber-500 hover:underline'>politique de confidentialité</a> pour plus d’informations."
+            },
+            {
+                "title": "6. Responsabilité",
+                "content": "L’éditeur ne saurait être tenu responsable en cas d’inexactitude ou d’erreur dans les contenus ou services proposés. L’utilisateur reste seul responsable de l’usage qu’il fait du site."
+            },
+            {
+                "title": "7. Modification des CGU",
+                "content": "Les présentes CGU peuvent être modifiées à tout moment. Il appartient à l’utilisateur de les consulter régulièrement."
+            },
+            {
+                "title": "8. Loi applicable",
+                "content": "Les présentes CGU sont régies par la loi française. En cas de litige, les tribunaux compétents seront ceux du ressort du siège social de l’éditeur."
+            }
+        ]
+    },
+    "confidential": {
+        "title": "Politique de confidentialité",
+        "last_update": "2025-04-09",
+        "intro": "Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles lorsque vous utilisez notre site.",
+        "sections": [
+            {
+                "title": "1. Responsable du traitement",
+                "content": "Le responsable du traitement est la société <strong>Nom de l'agence</strong>, joignable à l'adresse email suivante : <a href='mailto:contact_clicketvisible@gmail.com' class='text-amber-500 hover:underline'>contact_clicketvisible@gmail.com</a>."
+            },
+            {
+                "title": "2. Données collectées",
+                "list": [
+                    "Nom et prénom",
+                    "Adresse e-mail",
+                    "Numéro de téléphone",
+                    "Messages envoyés via le chat"
+                ]
+            },
+            {
+                "title": "3. Finalité du traitement",
+                "content": "Vos données sont collectées pour :",
+                "list": [
+                    "Vous répondre dans le cadre d'une demande de contact",
+                    "Assurer le suivi client",
+                    "Améliorer notre service"
+                ]
+            },
+            {
+                "title": "4. Durée de conservation",
+                "content": "Les données de conversation sont conservées pendant une durée maximale de <strong>12 mois</strong>, sauf demande contraire de votre part."
+            },
+            {
+                "title": "5. Partage des données",
+                "content": "Vos données ne sont <strong>jamais revendues</strong>. Elles ne sont partagées qu'en interne ou avec des prestataires techniques (hébergement, sécurité)."
+            },
+            {
+                "title": "6. Vos droits",
+                "content": "Conformément à la loi « Informatique et Libertés » et au RGPD, vous disposez des droits suivants :",
+                "list": [
+                    "Droit d'accès à vos données",
+                    "Droit de rectification",
+                    "Droit d'opposition",
+                    "Droit à l’effacement (droit à l’oubli)"
+                ],
+                "footer": "Pour exercer vos droits, contactez-nous à : <a href='mailto:contact_clicketvisible@gmail.com' class='text-amber-500 hover:underline'>contact_clicketvisible@gmail.com</a>"
+            },
+            {
+                "title": "7. Cookies",
+                "content": "Le site utilise des cookies à des fins fonctionnelles. Vous pouvez les accepter ou les refuser à tout moment."
+            },
+            {
+                "title": "8. Sécurité",
+                "content": "Vos données sont stockées sur des serveurs sécurisés et ne sont accessibles qu’aux personnes autorisées."
+            }
+        ]
+    },
+    "legal_mentions": {
+        "title": "Mentions légales",
+        "last_update": "2025-04-09",
+        "sections": [
+            {
+                "title": "1. Éditeur du site",
+                "content": "Le site <strong>https://instantchic.fr</strong> est édité par :<br><strong>Nom de l’entreprise / auto-entrepreneur</strong><br>SIRET : 951 073 469 00011<br>Adresse : 22 Av Jean De Lattre De Tassigny<br>Email : <a href='mailto:contact_clicketvisible@gmail.com' class='text-amber-500 hover:underline'>contact_clicketvisible@gmail.com</a><br>Téléphone : 07 82 14 81 41"
+            },
+            {
+                "title": "2. Directeur de la publication",
+                "content": "Samih Habbani – Gérant / Responsable légal de l’entreprise"
+            },
+            {
+                "title": "3. Hébergeur",
+                "content": "OVH<br>2 rue Kellermann – 59100 Roubaix – France<br>www.ovh.com"
+            },
+            {
+                "title": "4. Propriété intellectuelle",
+                "content": "L’ensemble du site (contenu, visuels, textes, logo, design) est protégé par le droit d’auteur. Toute reproduction sans autorisation est interdite."
+            },
+            {
+                "title": "5. Responsabilité",
+                "content": "Nous nous efforçons de fournir des informations fiables et à jour. Cependant, la responsabilité du site ne peut être engagée en cas d’erreur ou d’omission."
+            },
+            {
+                "title": "6. Données personnelles",
+                "content": "Les données collectées via notre formulaire de contact et notre chat sont traitées dans le respect du RGPD. Pour en savoir plus, consultez notre <a href='confidentialite.php' class='text-amber-500 hover:underline'>politique de confidentialité</a>."
+            },
+            {
+                "title": "7. Cookies",
+                "content": "Ce site utilise des cookies à des fins de mesure d’audience et d’amélioration de l’expérience utilisateur."
+            }
+        ]
+    },
+    "cookies_mentions": {
+        "title": "Politique de cookies",
+        "last_update": "2025-04-09",
+        "sections": [
+            {
+                "title": "1. Qu’est-ce qu’un cookie ?",
+                "content": "Un cookie est un petit fichier texte déposé sur votre appareil lors de votre visite sur notre site. Il permet notamment de mémoriser certaines de vos préférences et d’améliorer votre expérience utilisateur."
+            },
+            {
+                "title": "2. Cookies utilisés",
+                "content": "Nous utilisons différents types de cookies :",
+                "list": [
+                    "<strong>Cookies nécessaires :</strong> pour assurer le bon fonctionnement du site.",
+                    "<strong>Cookies analytiques :</strong> pour mesurer l’audience et améliorer nos contenus.",
+                    "<strong>Cookies de personnalisation :</strong> pour adapter le contenu à vos préférences."
+                ]
+            },
+            {
+                "title": "3. Consentement",
+                "content": "Lors de votre première visite, une bannière vous permet d’accepter ou de refuser les cookies non essentiels. Vous pouvez modifier votre choix à tout moment."
+            },
+            {
+                "title": "4. Gestion des cookies",
+                "content": "Vous pouvez configurer votre navigateur pour refuser tout ou partie des cookies, ou pour être averti lorsqu’un cookie est installé. Cependant, certaines fonctionnalités du site pourraient ne plus fonctionner correctement."
+            },
+            {
+                "title": "5. Durée de conservation",
+                "content": "Les cookies sont conservés pour une durée maximale de 13 mois à compter de leur dépôt sur votre appareil."
+            },
+            {
+                "title": "6. Contact",
+                "content": "Pour toute question relative à notre politique de cookies, vous pouvez nous contacter à l’adresse suivante : <a href='mailto:contact_clicketvisible@gmail.com' class='text-amber-500 hover:underline'>contact_clicketvisible@gmail.com</a>"
+            }
+        ]
     }
 }

@@ -1,5 +1,6 @@
 <?php
 require_once('./connexion.php');
+require_once('./variables.php');
 session_start();
 
 // Récupère toutes les conversations actives avec le nombre de messages non lus
@@ -31,21 +32,21 @@ if ($selectedId) {
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-900 text-white">
+<body class="<?= $bgSecondary; ?> dark:<?= $textTitle; ?>">
     <div class="flex h-screen">
 
         <!-- Liste des conversations -->
-        <aside class="w-1/4 bg-gray-800 border-r border-gray-700 overflow-y-auto">
+        <aside class="w-1/4 <?= $bgSecondary ;?> border-r border-gray-700 overflow-y-auto">
             <h2 class="p-4 font-bold text-lg border-b border-gray-700">Conversations</h2>
             <ul id="conversation-list">
                 <?php foreach ($conversations as $conv): ?>
                     <li>
                         <a href="?id=<?= $conv['id'] ?>"
-                            class="block px-4 py-2 <?= $selectedId == $conv['id'] ? 'bg-purple-600' : ($conv['unread'] > 0 ? 'bg-purple-800' : 'hover:bg-purple-700') ?>">
-                            <div class="font-semibold text-white">
+                            class="block px-4 py-2 <?= $selectedId == $conv['id'] ? $bgPrimary : ($conv['unread'] > 0 ? 'bg-purple-800' : "hover:$bgPrimary") ?>">
+                            <div class="font-semibold dark:<?= $textTitle; ?>">
                                 <?= htmlspecialchars($conv['name'] ?? 'Utilisateur inconnu') ?>
                                 <?php if ($conv['unread'] > 0 && $selectedId != $conv['id']): ?>
-                                    <span class="ml-2 text-xs bg-red-600 text-white px-2 py-0.5 rounded-full">New</span>
+                                    <span class="ml-2 text-xs bg-red-600 dark:<?= $textTitle; ?> px-2 py-0.5 rounded-full">New</span>
                                 <?php endif; ?>
                             </div>
                             <div class="text-sm text-gray-300">
@@ -54,12 +55,12 @@ if ($selectedId) {
                             <div class="text-sm text-gray-300">
                                 📞 <?= htmlspecialchars($conv['phone'] ?? '—') ?>
                             </div>
-                            <small class="text-gray-400 text-xs">Créée le
+                            <small class="<?= $textParagraph; ?> text-xs">Créée le
                                 <?= date('d/m/Y H:i', strtotime($conv['created_at'])) ?></small>
                         </a>
                         <form action="chat/archive.php" method="POST" class="text-right mb-2 px-4">
                             <input type="hidden" name="conversation_id" value="<?= $conv['id'] ?>">
-                            <button type="submit" class="text-xs bg-gray-700 hover:bg-red-600 text-white px-3 py-1 rounded">
+                            <button type="submit" class="text-xs <?= $bgQuartenary; ?> hover:bg-red-600 dark:<?= $textTitle; ?> px-3 py-1 rounded">
                                 Archiver la conversation
                             </button>
                         </form>
@@ -71,15 +72,15 @@ if ($selectedId) {
         <!-- Zone de chat -->
         <main class="flex-1 flex flex-col">
             <?php if ($selectedId): ?>
-                <div class="flex-1 overflow-y-auto p-6 space-y-4 bg-gray-800" id="chat-container">
+                <div class="flex-1 overflow-y-auto p-6 space-y-4 <?= $bgSecondary ;?>" id="chat-container">
                     <?php foreach ($messages as $msg): ?>
                         <div class="<?= $msg['sender'] === 'admin' ? 'text-right' : 'text-left' ?>">
                             <span
-                                class="inline-block px-4 py-2 rounded <?= $msg['sender'] === 'admin' ? 'bg-purple-600 text-white' : 'bg-gray-200 text-gray-900' ?>">
+                                class="inline-block px-4 py-2 rounded <?= $msg['sender'] === 'admin' ? "$bgPrimary dark:<?= $textTitle; ?>" : "bg-gray-200 $textTitleLightMode" ?>">
                                 <?= nl2br(htmlspecialchars($msg['message'])) ?>
                             </span>
                             <br>
-                            <small class="text-xs text-gray-400">
+                            <small class="text-xs <?= $textParagraph; ?>">
                                 <?= date('H:i d/m', strtotime($msg['created_at'])) ?> - <?= $msg['sender'] ?>
                             </small>
                         </div>
@@ -87,18 +88,18 @@ if ($selectedId) {
                 </div>
 
                 <!-- Formulaire de réponse -->
-                <form action="./chat/send_admin.php" method="POST" class="p-4 border-t border-gray-700 bg-gray-900">
+                <form action="./chat/send_admin.php" method="POST" class="p-4 border-t border-gray-700 <?= $bgSecondary; ?>">
                     <input type="hidden" name="conversation_id" value="<?= $selectedId ?>">
                     <div class="flex">
                         <textarea name="message" rows="2" placeholder="Votre réponse..."
-                            class="flex-1 border border-gray-600 bg-gray-800 text-white rounded px-3 py-2 mr-2 focus:outline-none focus:ring focus:ring-purple-500"></textarea>
-                        <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">
+                            class="flex-1 border border-gray-600 <?= $bgSecondary ;?> dark:<?= $textTitle; ?> rounded px-3 py-2 mr-2 focus:outline-none focus:ring focus:ring-purple-500"></textarea>
+                        <button type="submit" class="<?= $bgPrimary;?> dark:<?= $textTitle; ?> px-4 py-2 rounded hover:<?= $bgPrimaryHover; ?>">
                             Envoyer
                         </button>
                     </div>
                 </form>
             <?php else: ?>
-                <div class="p-6 text-center text-gray-400">Sélectionnez une conversation pour commencer</div>
+                <div class="p-6 text-center <?= $textParagraph; ?>">Sélectionnez une conversation pour commencer</div>
             <?php endif; ?>
         </main>
     </div>
@@ -136,14 +137,14 @@ if ($selectedId) {
             container.innerHTML = "";
             messages.forEach(msg => {
                 const align = msg.sender === 'admin' ? 'text-right' : 'text-left';
-                const bg = msg.sender === 'admin' ? 'bg-purple-600 text-white' : 'bg-gray-200 text-gray-900';
+                const bg = msg.sender === 'admin' ? "<?= $bgPrimary; ?>" + "dark:<?= $textTitle; ?>" : "bg-gray-200 <?= $textTitleLightMode;?>";
                 const date = msg.created_at ? new Date(msg.created_at) : null;
                 const time = date ? new Intl.DateTimeFormat('fr-FR', {
                     hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit'
                 }).format(date) : '';
                 container.innerHTML += `<div class="${align}">
                 <span class="inline-block px-4 py-2 rounded ${bg}">${msg.message}</span>
-                <br><small class="text-xs text-gray-400">${time} - ${msg.sender}</small>
+                <br><small class="text-xs <?= $textParagraph; ?>">${time} - ${msg.sender}</small>
             </div>`;
             });
 

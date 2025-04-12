@@ -1,16 +1,16 @@
-<section id="portfolio" class="text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-900 body-font">
+<section id="portfolio" class="<?= $textParagraphLightMode; ?> dark:text-gray-300 dark:<?= $bgSecondary; ?> body-font">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
     <div class="flex w-full mb-20 flex-wrap">
       <div class="lg:w-1/3 w-full mb-4" data-aos="fade-right">
         <h2
-          class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-4">
+          class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font <?= $textTitleLightMode;?> dark:<?= $textTitle;?> mb-4">
           <?= htmlspecialchars($content['portfolio']['title']) ?>
         </h2>
-        <div class="w-16 h-1 bg-purple-500 rounded inline-block"></div>
+        <div class="w-16 h-1 <?= $bgTernary;?> rounded inline-block"></div>
       </div>
 
       <p data-aos="fade-left"
-        class="lg:pl-6 lg:w-2/3 w-full leading-relaxed text-base text-gray-600 dark:text-gray-400">
+        class="lg:pl-6 lg:w-2/3 w-full leading-relaxed text-base <?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?>">
         <?= htmlspecialchars($content['portfolio']['description']) ?>
       </p>
     </div>
@@ -30,7 +30,7 @@
               <!-- Overlay -->
               <div
                 class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
-                <h2 class="text-white text-lg font-semibold">
+                <h2 class="dark:<?= $textTitle; ?> text-lg font-semibold">
                   <?= htmlspecialchars($content['portfolio']['projects'][$i]['title']) ?>
                 </h2>
                 <p class="text-sm text-gray-300 mt-1">
@@ -56,7 +56,7 @@
               <!-- Overlay -->
               <div
                 class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
-                <h2 class="text-white text-lg font-semibold">
+                <h2 class="dark:<?= $textTitle; ?> text-lg font-semibold">
                   <?= htmlspecialchars($content['portfolio']['projects'][$i]['title']) ?>
                 </h2>
                 <p class="text-sm text-gray-300 mt-1">

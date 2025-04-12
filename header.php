@@ -1,34 +1,47 @@
-<section class="text-gray-600 dark:text-gray-300 body-font bg-white dark:bg-gray-900 transition-colors duration-300">
+<?php
+  $title1 = str_replace('CLASS_PHOTOBOOTH', $textTernary, $content['header']['title_line1']);
+  $title2 = str_replace('CLASS_PHOTOBOOTH', $textPrimary, $content['header']['title_line2']);
+?>
+
+<section class="bg-gray-100 <?= $textParagraphLightMode; ?> dark:text-gray-300 body-font  dark:<?= $bgSecondary; ?> transition-colors duration-300">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div data-aos="fade-right"
       class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
 
-      <h1
-        class="sm:text-4xl lg:text-4xl text-4xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-6">
-        <?= htmlspecialchars($content['header']['title_line1']) ?>
+      <h1 class="sm:text-4xl lg:text-4xl text-4xl font-extrabold tracking-tight title-font <?= $textTitleLightMode;?> dark:<?= $textTitle;?> mb-6">
+        <?= $title1 ?>
         <br class="hidden lg:inline-block">
-        <?= htmlspecialchars($content['header']['title_line2']) ?>
+        <?= $title2 ?>
       </h1>
 
 
-      <p class="mb-8 leading-relaxed">
+      <p class="mb-8 leading-relaxed <?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?>">
         <?= htmlspecialchars($content['header']['paragraph']) ?>
       </p>
 
       <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
         <a href="?/#offers"
-          class="inline-flex items-center text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg w-full sm:w-auto justify-center">
+          class="inline-flex items-center h-12 px-6 <?= $textWhiteLightMode ?> <?= $bgPrimary;?> hover:<?= $bgPrimaryHover; ?> dark:<?= $textTitle; ?> text-lg font-semibold rounded-2xl shadow-lg transition duration-300 ease-in-out">
           <i class="ti-bag mr-2 text-xl leading-none"></i>
           <?= htmlspecialchars($content['header']['button1']) ?>
         </a>
 
         <a href="?/#contact"
-          class="inline-flex items-center text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 rounded text-lg w-full sm:w-auto justify-center">
+          class="inline-flex items-center h-12 px-6 <?= $textWhiteLightMode ?> <?= $bgQuartenary;?> hover:<?= $bgQuartenaryHover; ?> dark:<?= $textTitle; ?> text-lg font-semibold rounded-2xl shadow-lg transition duration-300 ease-in-out">
           <i class="ti-write mr-2 text-xl leading-none"></i>
           <?= htmlspecialchars($content['header']['button2']) ?>
         </a>
       </div>
 
+      <!-- Localisation -->
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-6 text-lg font-medium <?= $textParagraphLightMode ?> dark:<?= $textParagraph; ?>">
+        <?php foreach ($content['header']['cities'] as $city): ?>
+          <div class="flex items-center gap-2">
+            <i class="ti-location-pin text-xl <?= $textTernary; ?>"></i>
+            <span><?= htmlspecialchars($city) ?></span>
+          </div>
+        <?php endforeach; ?>
+      </div>
 
     </div>
 

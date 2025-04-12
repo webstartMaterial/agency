@@ -32,7 +32,7 @@ $content = json_decode(file_get_contents($jsonFile), true);
   <meta name="theme-color" content="<?= htmlspecialchars($content['head']['theme_color']) ?>"> <!-- violet foncé -->
 
   <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./imgs/favicon.ico" type="image/x-icon">
 
   <!-- Preconnect pour Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -79,6 +79,9 @@ $content = json_decode(file_get_contents($jsonFile), true);
 
 </head>
 
-<body class="overflow-x-hidden max-w-full dark:bg-gray-900"></body>
-
+<?php require_once("./variables.php"); ?>
 <?php require_once("./chat_widget.php"); ?>
+
+<body class="overflow-x-hidden max-w-full dark:<?= $bgSecondary; ?>"></body>
+
+

@@ -5,7 +5,7 @@ set -e
 
 # Définir le dossier du projet (où le script est exécuté)
 PROJECT_DIR="$(pwd)"
-GIT_REPO="git@github.com:webstartMaterial/agency.git"
+GIT_REPO="git@github.com:webstartMaterial/instantchic.git"
 
 echo "📍 Répertoire du projet : $PROJECT_DIR"
 

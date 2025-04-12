@@ -1,16 +1,16 @@
-<section class="text-gray-600 dark:text-gray-300 body-font bg-gray-100 dark:bg-gray-900">
+<section class="<?= $textParagraphLightMode; ?> dark:text-gray-300 body-font bg-gray-100 dark:<?= $bgSecondary; ?>">
   <div class="container px-5 py-24 mx-auto">
 
     <div class="text-center mb-20">
       <h2
-        class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-4">
+        class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font <?= $textTitleLightMode;?> dark:<?= $textTitle;?> mb-4">
         <?= htmlspecialchars($content['testimonials']['title']) ?>
       </h2>
-      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 dark:text-gray-400">
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto <?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?>">
         <?= htmlspecialchars($content['testimonials']['description']) ?>
       </p>
       <div class="flex mt-6 justify-center">
-        <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+        <div class="w-16 h-1 rounded-full <?= $bgPrimary;?> inline-flex"></div>
       </div>
     </div>
 
@@ -20,8 +20,8 @@
         <div class="p-4 md:w-1/2 w-full testimonial-item <?= $index >= 4 ? 'hidden' : '' ?>" data-index="<?= $index ?>"
           data-aos="fade-up" data-aos-delay="<?= $index * 200 ?>">
           <div
-            class="h-full bg-gray-100 dark:bg-gray-800 p-8 rounded shadow-md hover:shadow-xl transition-shadow duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-purple-400 mb-4"
+            class="h-full bg-gray-100 <?= $bgSecondaryLight ;?> p-8 rounded shadow-md hover:shadow-xl transition-shadow duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 <?= $textPrimary;?> mb-4"
               viewBox="0 0 975.036 975.036">
               <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 
               22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 
@@ -41,18 +41,26 @@
               40.501 35.2 65.301 24.399z">
               </path>
             </svg>
-            <p class="leading-relaxed mb-6 italic text-gray-700 dark:text-gray-300">
+            <p class="leading-relaxed mb-6 italic <?= $textParagraph; ?>">
               “<?= htmlspecialchars($testimonial['text']) ?>”
             </p>
+            <!-- Étoiles animées -->
+            <div class="flex items-center mb-4" data-aos="zoom-in" data-aos-delay="<?= $index * 200 + 100 ?>">
+              <?php for ($i = 0; $i < 5; $i++): ?>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current <?= $textPrimary; ?> mr-1" viewBox="0 0 20 20">
+                  <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.564-.954L10 0l2.948 5.956 6.564.954-4.756 4.635 1.122 6.545z"/>
+                </svg>
+              <?php endfor; ?>
+            </div>
             <a class="inline-flex items-center">
               <img alt="<?= htmlspecialchars($testimonial['name']) ?>"
                 src="<?= htmlspecialchars($testimonial['image']) ?>"
                 class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
               <span class="flex-grow flex flex-col pl-4">
-                <span class="title-font font-semibold text-gray-900 dark:text-white">
+                <span class="title-font font-semibold <?= $textTitle;?>">
                   <?= htmlspecialchars($testimonial['name']) ?>
                 </span>
-                <span class="text-gray-500 dark:text-gray-400 text-sm">
+                <span class="<?= $textParagraphLightMode; ?> <?= $textParagraph; ?> text-sm">
                   <?= htmlspecialchars($testimonial['role']) ?>
                 </span>
               </span>
@@ -64,9 +72,9 @@
 
     <div class="flex justify-center mt-8 space-x-3">
       <button onclick="showTestimonials(0)"
-        class="w-4 h-4 rounded-full bg-purple-500 opacity-70 hover:opacity-100 focus:outline-none"></button>
+        class="w-4 h-4 rounded-full <?= $bgTernary;?> opacity-70 hover:opacity-100 focus:outline-none"></button>
       <button onclick="showTestimonials(1)"
-        class="w-4 h-4 rounded-full bg-purple-300 opacity-70 hover:opacity-100 focus:outline-none"></button>
+        class="w-4 h-4 rounded-full <?= $bgTernary; ?> opacity-70 hover:opacity-100 focus:outline-none"></button>
     </div>
   </div>
 </section>

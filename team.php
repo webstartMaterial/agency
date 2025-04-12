@@ -1,15 +1,15 @@
-<section id="team" class="text-gray-600 dark:text-gray-300 body-font bg-gray-100 dark:bg-gray-900" data-aos="fade-up">
+<section id="team" class="<?= $textParagraphLightMode; ?> dark:text-gray-300 body-font bg-gray-100 dark:<?= $bgSecondary; ?>" data-aos="fade-up">
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
       <h2
-        class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-4">
+        class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font <?= $textTitleLightMode;?> dark:<?= $textTitle;?> mb-4">
         <?= htmlspecialchars($content['team']['title']) ?>
       </h2>
-      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600 dark:text-gray-400">
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto <?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?>">
         <?= htmlspecialchars($content['team']['description']) ?>
       </p>
       <div class="flex mt-6 justify-center">
-        <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+        <div class="w-16 h-1 rounded-full <?= $bgTernary;?> inline-flex"></div>
       </div>
     </div>
 
@@ -17,20 +17,20 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       <?php foreach ($content['team']['members'] as $index => $member): ?>
         <div
-          class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center p-6"
+          class="<?= $bgSecondaryLight ;?> rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center p-6"
           data-aos="zoom-in" data-aos-delay="<?= $index * 150 ?>">
           <img alt="<?= htmlspecialchars($member['name']) ?>"
-            class="w-32 h-32 rounded-full object-cover object-center mb-4 border-4 border-purple-500 shadow"
+            class="w-32 h-32 rounded-full object-cover object-center mb-4 border-4 <?= $border;?> shadow"
             src="<?= htmlspecialchars($member['image']) ?>">
 
           <div class="w-full">
-            <h2 class="title-font font-medium text-lg text-gray-900 dark:text-white">
+            <h2 class="title-font font-medium text-lg <?= $textTitle;?>">
               <?= htmlspecialchars($member['name']) ?>
             </h2>
-            <h3 class="text-gray-500 dark:text-gray-400 mb-2 text-sm">
+            <h3 class="<?= $textParagraph; ?> mb-2 text-sm">
               <?= htmlspecialchars($member['role']) ?>
             </h3>
-            <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+            <p class="mb-4 text-sm <?= $textParagraph; ?>">
               <?= htmlspecialchars($member['bio']) ?>
             </p>
 

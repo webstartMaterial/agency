@@ -1,31 +1,31 @@
-<section class="text-gray-600 body-font">
+<section class="<?= $textParagraphLightMode; ?> body-font">
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img class="object-cover object-center rounded" alt="newsletter" src="https://dummyimage.com/720x600">
         </div>
         <div
             class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium <?= $textTitleLightMode;?>">
                 <?= htmlspecialchars($content['newsletter']['title']) ?>
             </h1>
-            <p class="mb-8 leading-relaxed">
+            <p class="mb-8 leading-relaxed <?= $textParagraph; ?>">
                 <?= htmlspecialchars($content['newsletter']['description']) ?>
             </p>
             <div class="flex w-full md:justify-start justify-center items-end">
                 <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
-                    <label for="newsletter-email" class="leading-7 text-sm text-gray-600">
+                    <label for="newsletter-email" class="leading-7 text-sm <?= $textParagraphLightMode; ?>">
                         <?= htmlspecialchars($content['newsletter']['placeholder']) ?>
                     </label>
                     <input type="email" id="newsletter-email" name="newsletter-email"
-                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-purple-200 focus:bg-transparent focus:border-purple-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-purple-200 focus:bg-transparent focus:<?= $border;?> text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         placeholder="<?= htmlspecialchars($content['newsletter']['placeholder']) ?>">
                 </div>
                 <button
-                    class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">
+                    class="inline-flex dark:<?= $textTitle; ?> <?= $bgPrimary;?> border-0 py-2 px-6 focus:outline-none hover:<?= $bgPrimaryHover;?> rounded text-lg">
                     <?= htmlspecialchars($content['newsletter']['button']) ?>
                 </button>
             </div>
-            <p class="text-sm mt-2 text-gray-500 mb-8 w-full">
+            <p class="text-sm mt-2 <?= $textParagraphLightMode; ?> mb-8 w-full">
                 <?= htmlspecialchars($content['newsletter']['disclaimer']) ?>
             </p>
             <div class="flex lg:flex-row md:flex-col">
@@ -37,7 +37,7 @@
                         </path>
                     </svg>
                     <span class="ml-4 flex items-start flex-col leading-none">
-                        <span class="text-xs text-gray-600 mb-1">GET IT ON</span>
+                        <span class="text-xs <?= $textParagraphLightMode; ?> mb-1">GET IT ON</span>
                         <span class="title-font font-medium">Google Play</span>
                     </span>
                 </button>
@@ -52,7 +52,7 @@
                         </path>
                     </svg>
                     <span class="ml-4 flex items-start flex-col leading-none">
-                        <span class="text-xs text-gray-600 mb-1">Download on the</span>
+                        <span class="text-xs <?= $textParagraphLightMode; ?> mb-1">Download on the</span>
                         <span class="title-font font-medium">App Store</span>
                     </span>
                 </button>

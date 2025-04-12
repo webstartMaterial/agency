@@ -1,3 +1,7 @@
+
+
+  
+  
   <?php require_once("./haut_site.php"); ?>
 
   <?php require_once("./nav.php"); ?>

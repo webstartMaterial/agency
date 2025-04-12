@@ -3,17 +3,17 @@
 
     <!-- Chat Toggle Button -->
     <button id="chat-toggle"
-        class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+        class="border <?= $border ;?> <?= $bgPrimary;?> hover:<?= $bgPrimaryHover; ?> <?= $textWhiteLightMode; ?> dark:<?= $textTitle; ?> px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
         <i class="ti-comment-alt text-lg"></i>
         <span><?= htmlspecialchars($content['chat']['toggle_label']) ?></span>
     </button>
 
     <!-- Chat Window -->
     <div id="chat-box"
-        class="hidden w-80 bg-white dark:bg-gray-800 rounded-lg shadow-xl mt-4 overflow-hidden flex flex-col">
+        class="hidden border <?= $border ;?> w-80 bg-white dark:<?= $bgSecondary ;?> rounded-lg shadow-xl mt-4 overflow-hidden flex flex-col">
 
         <!-- Header -->
-        <div class="bg-purple-600 text-white px-4 py-3 text-sm font-semibold">
+        <div class="<?= $bgPrimary;?> <?= $textWhiteLightMode;?> dark:<?= $textTitle; ?> px-4 py-3 text-sm font-semibold">
             <?= htmlspecialchars($content['chat']['header_title']) ?>
         </div>
 
@@ -21,34 +21,34 @@
         <div id="chat-start" class="p-4 flex flex-col gap-3">
             <input id="chat-name" type="text"
                 placeholder="<?= htmlspecialchars($content['chat']['placeholder_name']) ?>"
-                class="px-3 py-2 rounded border bg-gray-100 dark:bg-gray-700 text-sm placeholder-white text-white dark:placeholder-white">
+                class="px-3 py-2 rounded border bg-gray-100 dark:<?= $bgQuartenary; ?> text-sm placeholder-<?= $textParagraphLightMode; ?> dark:<?= $textTitle; ?> dark:placeholder-white">
 
             <input id="chat-email" type="email"
                 placeholder="<?= htmlspecialchars($content['chat']['placeholder_email']) ?>"
-                class="px-3 py-2 rounded border bg-gray-100 dark:bg-gray-700 text-sm placeholder-white text-white dark:placeholder-white">
+                class="px-3 py-2 rounded border bg-gray-100 dark:<?= $bgQuartenary; ?> text-sm placeholder-<?= $textParagraphLightMode; ?> dark:<?= $textTitle; ?> dark:placeholder-white">
 
             <input id="chat-phone" type="text"
                 placeholder="<?= htmlspecialchars($content['chat']['placeholder_phone']) ?>"
-                class="px-3 py-2 rounded border bg-gray-100 dark:bg-gray-700 text-sm placeholder-white text-white dark:placeholder-white">
+                class="px-3 py-2 rounded border bg-gray-100 dark:<?= $bgQuartenary; ?> text-sm placeholder-<?= $textParagraphLightMode; ?> dark:<?= $textTitle; ?> dark:placeholder-white">
 
-            <button id="start-chat" class="bg-purple-500 hover:bg-purple-600 text-white text-sm py-2 px-4 rounded">
+            <button id="start-chat" class="<?= $bgPrimary;?> hover:<?= $bgPrimaryHover;?> <?= $textWhiteLightMode;?> dark:<?= $textTitle; ?> text-sm py-2 px-4 rounded">
                 <?= htmlspecialchars($content['chat']['start_button']) ?>
             </button>
         </div>
 
         <!-- Messages -->
         <div id="chat-messages" class="flex-1 p-4 overflow-y-auto text-sm space-y-2 max-h-64 hidden">
-            <div class="text-gray-500 text-center"><?= htmlspecialchars($content['chat']['start_message']) ?></div>
+            <div class="<?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?> text-center"><?= htmlspecialchars($content['chat']['start_message']) ?></div>
         </div>
 
         <!-- Message Input -->
         <form id="chat-form" class="border-t border-gray-200 dark:border-gray-700 p-3 flex flex-col sm:flex-row gap-2 hidden">
             <input type="text" id="chat-input"
                 placeholder="<?= htmlspecialchars($content['chat']['placeholder_message']) ?>"
-                class="flex-1 px-3 py-2 border rounded text-sm bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-white dark:placeholder-white">
+                class="flex-1 px-3 py-2 border rounded text-sm bg-gray-100 dark:<?= $bgQuartenary; ?> <?= $textTitleLightMode;?> <?= $textTitle;?> placeholder-<?= $textParagraphLightMode;?> dark:placeholder-white">
 
             <button type="submit"
-                class="bg-purple-500 hover:bg-purple-600 text-white text-sm px-4 py-2 rounded w-full sm:w-auto">
+                class="<?= $bgPrimary;?> hover:<?= $bgPrimaryHover;?> <?= $textWhiteLightMode;?> dark:<?= $textTitle; ?> text-sm px-4 py-2 rounded w-full sm:w-auto">
                 <?= htmlspecialchars($content['chat']['send_button']) ?>
             </button>
         </form>
@@ -56,7 +56,7 @@
 
         <div class="p-2 text-center text-xs">
             <button onclick="localStorage.clear(); location.reload();"
-                class="text-gray-400 hover:text-gray-700 dark:hover:text-white underline">
+                class="<?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?> hover:text-gray-700 dark:hover:dark:<?= $textTitle; ?> underline">
                 <?= htmlspecialchars($content['chat']['reset_button']) ?>
             </button>
         </div>
@@ -166,14 +166,14 @@
             const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
             const fullDate = now.toLocaleDateString();
             const align = "text-right";
-            const bg = "bg-purple-100 dark:bg-purple-600 text-white";
+            const bg = "bg-purple-100 dark:<?= $bgPrimary;?> dark:<?= $textTitle; ?>";
             messagesDiv.innerHTML += `
             <div class="mb-2 ${align}">
-                <div class="text-xs text-gray-400 mb-1 font-semibold">
+                <div class="text-xs <?= $textParagraph; ?> mb-1 font-semibold">
                     Vous -                 <span class="${bg} px-2 py-1 rounded inline-block">${message}</span><br>
 
                 </div>
-                <small class="text-xs text-gray-400">${time} - ${fullDate}</small>
+                <small class="text-xs <?= $textParagraph; ?>">${time} - ${fullDate}</small>
             </div>`;
             chatInput.value = "";
 
@@ -205,7 +205,7 @@
 
                 data.forEach(msg => {
                     const align = msg.sender === "admin" ? "text-left" : "text-right";
-                    const bg = msg.sender === "admin" ? "bg-green-100 dark:bg-green-600 text-white" : "bg-purple-100 dark:bg-purple-600 text-white";
+                    const bg = msg.sender === "admin" ? "bg-green-100 dark:bg-green-600 <?= $textTitleLightMode; ?> dark:<?= $textTitle; ?>" : "bg-purple-100 dark:<?= $bgPrimary;?> dark:<?= $textTitle; ?>";
 
                     const date = new Date(msg.created_at);
                     const time = `${date.getHours().toString().padStart(2, "0")}:${date.getMinutes().toString().padStart(2, "0")}`;
@@ -213,12 +213,12 @@
 
                     messagesDiv.innerHTML += `
                     <div class="mb-2 ${align}">
-                        <div class="text-xs text-gray-400 mb-1 font-semibold">
+                        <div class="text-xs <?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?> mb-1 font-semibold">
                             ${msg.sender === "admin" ? "Votre conseiller Sam" : "Vous"} -
                                                     <span class="${bg} px-2 py-1 rounded inline-block">${msg.message}</span><br>
 
                         </div>
-                        <small class="text-xs text-gray-400">${time} - ${fullDate}</small>
+                        <small class="text-xs <?= $textParagraphLightMode ?> dark:<?= $textParagraph; ?>">${time} - ${fullDate}</small>
                     </div>`;
                 });
 

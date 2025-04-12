@@ -1,16 +1,16 @@
-<section class="text-gray-600 dark:text-gray-300 body-font bg-gray-100 dark:bg-gray-900" data-aos="fade-up">
+<section class="<?= $textParagraphLightMode; ?> dark:text-gray-300 body-font dark:<?= $bgSecondary; ?>" data-aos="fade-up">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
 
       <!-- Titre + description -->
       <div class="w-full mb-20 text-center" data-aos="fade-down">
-      <h2 class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font text-gray-900 dark:text-white mb-4">
+      <h2 class="sm:text-3xl lg:text-3xl text-3xl font-extrabold tracking-tight title-font <?= $textTitleLightMode;?> dark:<?= $textTitle;?> mb-4">
         <?= htmlspecialchars($content['process']['title']) ?>
       </h2>
-      <p class="lg:w-1/2 w-full mx-auto leading-relaxed text-gray-500 dark:text-gray-400">
+      <p class="lg:w-1/2 w-full mx-auto leading-relaxed <?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?>">
         <?= htmlspecialchars($content['process']['description']) ?>
       </p>
       <div class="flex mt-6 justify-center">
-        <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+        <div class="w-16 h-1 rounded-full <?= $bgTernary;?> inline-flex"></div>
       </div>
     </div>
     <div class="flex flex-wrap w-full">
@@ -21,19 +21,19 @@
           <div class="flex relative pb-12" data-aos="fade-up" data-aos-delay="<?= $index * 100 ?>">
             <?php if ($index < count($content['process']['steps']) - 1): ?>
               <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                <div class="h-full w-1 bg-gray-300 dark:bg-gray-700 pointer-events-none"></div>
+                <div class="h-full w-1 bg-gray-300 dark:<?= $bgQuartenary; ?> pointer-events-none"></div>
               </div>
             <?php endif; ?>
 
-            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10 text-lg">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full <?= $textWhiteLightMode;?> <?= $bgPrimary;?> inline-flex items-center justify-center dark:<?= $textTitle; ?> relative z-10 text-lg">
               <i class="<?= htmlspecialchars($step['icon']) ?>"></i>
             </div>
 
             <div class="flex-grow pl-4">
-              <h2 class="font-bold title-font text-sm text-gray-900 dark:text-white mb-1 tracking-wider">
+              <h2 class="font-bold title-font text-sm <?= $textTitleLightMode;?> <?= $textTitle;?> mb-1 tracking-wider">
                 <?= htmlspecialchars($step['title']) ?>
               </h2>
-              <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+              <p class="leading-relaxed <?= $textParagraphLightMode; ?> dark:<?= $textParagraph; ?>">
                 <?= htmlspecialchars($step['description']) ?>
               </p>
             </div>
@@ -42,7 +42,8 @@
 
         <!-- CTA -->
         <div class="mt-8" data-aos="fade-up" data-aos-delay="500">
-          <a href="estimate.php" class="inline-flex items-center text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">
+          <a href="/?#contact" 
+          class="inline-flex items-center px-6 py-3 <?= $bgPrimary;?> hover:<?= $bgPrimaryHover; ?> <?= $textWhiteLightMode;?> dark:<?= $textTitle; ?> text-lg font-semibold rounded-2xl shadow-lg transition duration-300 ease-in-out">
             <i class="ti-comments mr-2 text-xl leading-none"></i>
             <?= htmlspecialchars($content['process']['button']) ?>
           </a>
