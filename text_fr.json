@@ -316,11 +316,11 @@
                 "link": "https://scafendi.com/"
             },
             {
-                "title": "Portfolio Client",
-                "client": "Samih HABBANI",
-                "type": "Portfolio",
+                "title": "Site Web",
+                "client": "Zedino",
+                "type": "Agence Web",
                 "image": "./imgs/portfolio/portfolio6.webp",
-                "link": "http://samihhabbani.com/"
+                "link": "http://zedino.com/"
             }
         ]
     },
