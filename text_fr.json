@@ -288,25 +288,25 @@
                 "link": "https://www.academiews.fr"
             },
             {
-                "title": "Centre de formation",
-                "client": "Gabriel RH",
-                "type": "Site web",
-                "image": "./imgs/portfolio/portfolio2.webp",
-                "link": "https://gabrielrh.com/"
-            },
-            {
-                "title": "Agence WEB",
-                "client": "Zedino",
-                "type": "Agence WEB",
-                "image": "./imgs/portfolio/portfolio3.webp",
-                "link": "https://zedino.com/"
-            },
-            {
                 "title": "Agence de consulting",
                 "client": "Exissia",
                 "type": "Site web",
-                "image": "./imgs/portfolio/portfolio4.webp",
+                "image": "./imgs/portfolio/portfolio2.webp",
                 "link": "https://www.exissia.com/"
+            },
+            {
+                "title": "Conciergerie de luxe",
+                "client": "Syrama Services",
+                "type": "Conciergerie de luxe",
+                "image": "./imgs/portfolio/portfolio3.webp",
+                "link": "https://syrama-services.com/"
+            },
+            {
+                "title": "Location de Photobooth",
+                "client": "Instant Chic",
+                "type": "Site web",
+                "image": "./imgs/portfolio/portfolio4.webp",
+                "link": "https://www.instantchic.fr/"
             },
             {
                 "title": "Agence de consulting informatique",
